@@ -1,0 +1,758 @@
+[
+  {
+    "id": 1,
+    "name": "双能X线骨密度仪",
+    "file": "1.双能X线骨密度仪调研报告-e6962f1ffb.md",
+    "priceMin": 20,
+    "priceMax": 35,
+    "summary": "设备全称：双能X线骨密度仪（Dual Energy X-ray Absorptiometry，简称DXA或DEXA）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "胸部X光机",
+    "file": "2.胸部X光机调研报告-a5ae695cab.md",
+    "priceMin": 20,
+    "priceMax": 35,
+    "summary": "设备全称：胸部X光机，正式名称为数字化X线摄影系统（Digital Radiography，简称DR）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "心脏超声诊断仪",
+    "file": "3.心脏超声诊断仪调研报告-1472364680.md",
+    "priceMin": 25,
+    "priceMax": 40,
+    "summary": "设备全称：心脏超声诊断仪，正式名称为彩色多普勒超声心动图仪（Color Doppler Echocardiography）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "OB GYN妇产科超声扫描单元",
+    "file": "4.OB GYN妇产科超声扫描单元调研报告-4f87ea8ecf.md",
+    "priceMin": 15,
+    "priceMax": 30,
+    "summary": "设备全称：OB/GYN妇产科超声扫描单元（Obstetrics and Gynecology Ultrasound System）",
+    "categories": [
+      "影像诊断",
+      "产科设备"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "IVUS血管内超声诊断仪",
+    "file": "5.IVUS血管内超声诊断仪调研报告-f3156b8ac7.md",
+    "priceMin": 70,
+    "priceMax": 100,
+    "summary": "设备全称：IVUS血管内超声诊断仪（Intravascular Ultrasound System）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "吊顶式通用X光机",
+    "file": "6.吊顶式通用X光机调研报告-5d7e6d7b7f.md",
+    "priceMin": 50,
+    "priceMax": 80,
+    "summary": "设备全称：吊顶式通用X光机（Ceiling-mounted General Purpose X-ray System）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "磁共振成像仪MRI",
+    "file": "7.磁共振成像仪MRI调研报告-d7ec736041.md",
+    "priceMin": 150,
+    "priceMax": 300,
+    "summary": "设备全称：磁共振成像仪（Magnetic Resonance Imaging, MRI）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "超声检查床",
+    "file": "8.超声检查床调研报告-434b66dcd5.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "设备全称：超声检查床（Ultrasound Examination Table）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "三气延时摄影培养箱",
+    "file": "9.三气延时摄影培养箱调研报告-3406ede8ea.md",
+    "priceMin": 80,
+    "priceMax": 150,
+    "summary": "设备全称：三气延时摄影培养箱（Tri-Gas Time-Lapse Incubator）",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "IVF显微操作仪",
+    "file": "10.IVF显微操作仪调研报告-02a870954d.md",
+    "priceMin": 15,
+    "priceMax": 30,
+    "summary": "",
+    "categories": [
+      "IVF设备"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "带摄像头倒置显微镜",
+    "file": "11.带摄像头倒置显微镜调研报告-baa96f372a.md",
+    "priceMin": 3,
+    "priceMax": 8,
+    "summary": "",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "透析站",
+    "file": "12.透析站调研报告-2e982a7705.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "",
+    "categories": [
+      "透析设备"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "成人儿童通用型呼吸机",
+    "file": "13.成人儿童通用型呼吸机调研报告-0276359f3c.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "",
+    "categories": [
+      "监护设备"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "生理参数重症监护用监护仪",
+    "file": "14.生理参数重症监护用监护仪调研报告-e5beec0255.md",
+    "priceMin": 2,
+    "priceMax": 5,
+    "summary": "",
+    "categories": [
+      "监护设备"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "麻醉机标准款",
+    "file": "15.麻醉机标准款调研报告-c106e28dbf.md",
+    "priceMin": 6,
+    "priceMax": 15,
+    "summary": "设备全称：麻醉工作站（Anesthesia Workstation）/ 麻醉机",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "ICU电动病床",
+    "file": "16.ICU电动病床调研报告-f8ab7ba100.md",
+    "priceMin": 2,
+    "priceMax": 5,
+    "summary": "设备全称：医用ICU电动病床（ICU Electric Hospital Bed）/ 重症监护室电动护理床",
+    "categories": [
+      "监护设备",
+      "辅助设备"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "快速输液泵带血液溶液加温功能",
+    "file": "17.快速输液泵带血液溶液加温功能调研报告-6b512b3ec7.md",
+    "priceMin": 5,
+    "priceMax": 10,
+    "summary": "快速输液泵（带血液/溶液加温功能）调研报告",
+    "categories": [
+      "辅助设备"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "监护仪生理参数手术室心脏专科用",
+    "file": "18.监护仪生理参数手术室心脏专科用调研报告-62b47ef269.md",
+    "priceMin": 3,
+    "priceMax": 8,
+    "summary": "监护仪：生理参数，手术室/心脏专科用调研报告",
+    "categories": [
+      "手术设备",
+      "监护设备"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "腹腔镜内镜塔",
+    "file": "19.腹腔镜内镜塔调研报告-b4605e630f.md",
+    "priceMin": 4,
+    "priceMax": 8,
+    "summary": "设备全称：腹腔镜内镜塔（Laparoscopic Endoscopy Tower）/ 腹腔镜吊塔系统（Laparoscopic Pendant",
+    "categories": [
+      "辅助设备"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "血液透析机",
+    "file": "20.血液透析机调研报告-f55ed20891.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "设备全称：血液透析机（Hemodialysis Machine）/ 血液透析滤过机（Hemodiafiltration Machine）",
+    "categories": [
+      "透析设备"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Humidicrib_婴儿培养箱_",
+    "file": "21.Humidicrib_婴儿培养箱_调研报告-c0c39959dc.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "",
+    "categories": [
+      "产科设备",
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "新生儿儿科呼吸机_",
+    "file": "22.新生儿儿科呼吸机_调研报告-51db51d40a.md",
+    "priceMin": 8,
+    "priceMax": 18,
+    "summary": "",
+    "categories": [
+      "监护设备",
+      "产科设备"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "旋磨斑块切除系统_",
+    "file": "23.旋磨斑块切除系统_调研报告-5d5b4e2c06.md",
+    "priceMin": 15,
+    "priceMax": 25,
+    "summary": "",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "体外循环机_",
+    "file": "24.体外循环机_调研报告-5c71215db6.md",
+    "priceMin": 80,
+    "priceMax": 150,
+    "summary": "",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "电刀单极双极型_",
+    "file": "25.电刀单极双极型_调研报告-e55796fc5e.md",
+    "priceMin": 3,
+    "priceMax": 15,
+    "summary": "",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "产前胎儿生理监护仪CTG_",
+    "file": "26.产前胎儿生理监护仪CTG_调研报告-1a25eb8e21.md",
+    "priceMin": 3,
+    "priceMax": 8,
+    "summary": "产前胎儿生理监护仪（CTG）结构化调研报告",
+    "categories": [
+      "影像诊断",
+      "监护设备",
+      "产科设备"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "电动移动式骨科创伤手术床_",
+    "file": "27.电动移动式骨科创伤手术床_调研报告-624e18bb57.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "电动移动手术台通用型_",
+    "file": "28.电动移动手术台通用型_调研报告-a7190c7f55.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "设备全称：电动移动手术台通用型（Electric Mobile Operating Table General Type）",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "机器人手术系统_",
+    "file": "29.机器人手术系统_调研报告-39adfa170e.md",
+    "priceMin": 800,
+    "priceMax": 1500,
+    "summary": "",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "麻醉监护仪_",
+    "file": "30.麻醉监护仪_调研报告-b22f4f88c4.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "设备全称：麻醉监护仪（Anaesthetic Monitor）",
+    "categories": [
+      "手术设备",
+      "监护设备"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "新生儿保暖单元_",
+    "file": "31.新生儿保暖单元_调研报告-93b39d4a69.md",
+    "priceMin": 3,
+    "priceMax": 6,
+    "summary": "设备全称：新生儿保暖单元（Neonatal Warmer Unit）",
+    "categories": [
+      "产科设备"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "移动式单头血管造影造影剂注射器_",
+    "file": "32.移动式单头血管造影造影剂注射器_调研报告-57749a71c1.md",
+    "priceMin": 15,
+    "priceMax": 25,
+    "summary": "移动式单头血管造影造影剂注射器结构化调研报告",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "移动式双头CT造影剂注射器_",
+    "file": "33.移动式双头CT造影剂注射器_调研报告-49298ebb37.md",
+    "priceMin": 25,
+    "priceMax": 40,
+    "summary": "设备全称：移动式双头CT造影剂注射器（Mobile Dual-Head CT Contrast Media Injector）",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "主动脉内球囊反搏泵IABP_",
+    "file": "34.主动脉内球囊反搏泵IABP_调研报告-f83dec6a90.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "IVF激光系统_",
+    "file": "35.IVF激光系统_调研报告-1255356896.md",
+    "priceMin": 15,
+    "priceMax": 25,
+    "summary": "",
+    "categories": [
+      "IVF设备"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "单头手术无影灯550mm_",
+    "file": "36.单头手术无影灯550mm_调研报告-9c397564fa.md",
+    "priceMin": 3,
+    "priceMax": 6,
+    "summary": "单头手术无影灯（标称直径550mm）结构化调研报告",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "骨科手术导航系统_",
+    "file": "37.骨科手术导航系统_调研报告-59a4e0f02a.md",
+    "priceMin": 50,
+    "priceMax": 100,
+    "summary": "设备全称：骨科手术导航系统（Orthopaedic Surgical Navigation System）",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "可调节高度悬臂式医疗吊塔_",
+    "file": "38.可调节高度悬臂式医疗吊塔_调研报告-4491c1ebe9.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "设备全称：可调节高度悬臂式医疗吊塔（Adjustable Height Cantilever Medical Pendant）",
+    "categories": [
+      "辅助设备"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "IVF生物安全柜_",
+    "file": "39.IVF生物安全柜_调研报告-f508666157.md",
+    "priceMin": 5,
+    "priceMax": 12,
+    "summary": "设备全称：IVF生物安全柜（In Vitro Fertilization Biological Safety Cabinet, Class II）",
+    "categories": [
+      "IVF设备"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "壁挂式生命体征监护仪",
+    "file": "40.壁挂式生命体征监护仪调研报告-c62da6f961.md",
+    "priceMin": 3,
+    "priceMax": 8,
+    "summary": "",
+    "categories": [
+      "监护设备"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "便携式吸引吸痰泵",
+    "file": "41.便携式吸引吸痰泵调研报告-f84be1dcda.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "辅助设备"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "肠内营养输注泵",
+    "file": "42.肠内营养输注泵调研报告-eae878fd25 .md",
+    "priceMin": 1,
+    "priceMax": 6,
+    "summary": "",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "X光检查床",
+    "file": "43.X光检查床调研报告-f4318e607f.md",
+    "priceMin": 1,
+    "priceMax": 8,
+    "summary": "",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "除颤监护仪",
+    "file": "44.除颤监护仪调研报告-f421149de6.md",
+    "priceMin": 5,
+    "priceMax": 12,
+    "summary": "",
+    "categories": [
+      "监护设备"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "单门血液制品冷藏箱",
+    "file": "45.单门血液制品冷藏箱调研报告-7025877c2a.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "导管式取栓系统",
+    "file": "46.导管式取栓系统调研报告-9f311558c9.md",
+    "priceMin": 2,
+    "priceMax": 6,
+    "summary": "",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "电动检查治疗床",
+    "file": "47.电动检查治疗床调研报告-69e467a7b4.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "关节镜内镜塔",
+    "file": "48.关节镜内镜塔调研报告-dbad975241.md",
+    "priceMin": 4,
+    "priceMax": 6,
+    "summary": "设备全称:关节镜内镜塔(Arthroscopy Endoscopy Tower/Pendant)",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "可调节高度服务吊塔",
+    "file": "49.可调节高度服务吊塔调研报告-8c3bc6a698.md",
+    "priceMin": 2,
+    "priceMax": 5,
+    "summary": "设备全称:可调节高度服务吊塔(Height-Adjustable Services Pendant/Medical Service Tower)",
+    "categories": [
+      "辅助设备"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "内镜专用医疗吊塔",
+    "file": "50.内镜专用医疗吊塔调研报告-3c5580c6b9.md",
+    "priceMin": 4,
+    "priceMax": 6,
+    "summary": "设备全称:内镜专用医疗吊塔(Endoscopy Services Pendant)",
+    "categories": [
+      "辅助设备"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "气套式CO2培养箱240L",
+    "file": "51.气套式CO2培养箱240L调研报告-66fd477af7.md",
+    "priceMin": 1,
+    "priceMax": 3,
+    "summary": "",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "器械托盘追踪系统",
+    "file": "52.器械托盘追踪系统调研报告-82436e0369.md",
+    "priceMin": 5,
+    "priceMax": 10,
+    "summary": "设备全称：器械托盘追踪系统（Instrument Tray Tracking System）",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "生物指示剂培养箱",
+    "file": "53.生物指示剂培养箱调研报告-b5b2e63b98.md",
+    "priceMin": 1,
+    "priceMax": 2,
+    "summary": "设备全称：生物指示剂培养箱（Biological Indicator Incubator）",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "实验室台下式冷藏箱(150L)",
+    "file": "54.实验室台下式冷藏箱(150L)调研报告-fe73684e0e.md",
+    "priceMin": 4,
+    "priceMax": 6,
+    "summary": "实验室台下式冷藏箱（150L）及药品冷藏箱（150L）调研报告",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "实验室台下式冷冻柜150L",
+    "file": "55.实验室台下式冷冻柜150L调研报告-ea596edbaf.md",
+    "priceMin": 2,
+    "priceMax": 4,
+    "summary": "设备全称：实验室台下式冷冻柜（Laboratory Undercounter Freezer, 150L）",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "手术室集成专用服务器柜",
+    "file": "56.手术室集成专用服务器柜调研报告-19a0a48b70.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "设备全称：手术室集成专用服务器柜（Operating Room Integrated Server Cabinet）",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "57手术烟雾净化系统调研报告-af74f7be57.md",
+    "file": "57手术烟雾净化系统调研报告-af74f7be57.md",
+    "priceMin": 6,
+    "priceMax": 12,
+    "summary": "设备全称：手术烟雾净化系统（Surgical Smoke Evacuation System）",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "双舱独立式恒温箱500L",
+    "file": "58.双舱独立式恒温箱500L调研报告-bfde395f40.md",
+    "priceMin": 2,
+    "priceMax": 3,
+    "summary": "设备全称：双舱独立式恒温箱（Dual Compartment Freestanding Warming Cabinet, 500L）",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "台式三气多室培养箱",
+    "file": "59.台式三气多室培养箱调研报告-cb93ab926a.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "体视显微镜",
+    "file": "60.体视显微镜调研报告-8abe808918.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "实验室设备"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "通用型超声诊断仪",
+    "file": "61.通用型超声诊断仪调研报告-73e47f07e7.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "通用型温疗仪",
+    "file": "62.通用型温疗仪调研报告-0e0992bb82.md",
+    "priceMin": 8,
+    "priceMax": 18,
+    "summary": "",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "医用高清视频监视器",
+    "file": "63.医用高清视频监视器调研报告-9262de9cd1.md",
+    "priceMin": 3,
+    "priceMax": 8,
+    "summary": "医用高清视频监视器(19/26/55英寸)调研报告",
+    "categories": [
+      "其他"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "移动式单人手术灯",
+    "file": "64.移动式单人手术灯调研报告-909399da7a.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "手术设备"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "婴儿复苏台",
+    "file": "65.婴儿复苏台调研报告-d7ebf5f3e8.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "产科设备"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "ACT凝血功能检测单元",
+    "file": "66.ACT凝血功能检测单元调研报告-21624c6810.md",
+    "priceMin": 3,
+    "priceMax": 8,
+    "summary": "",
+    "categories": [
+      "影像诊断"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "IVF电子见证系统",
+    "file": "67.IVF电子见证系统调研报告-a92aacf076.md",
+    "priceMin": 8,
+    "priceMax": 15,
+    "summary": "设备全称：IVF电子见证系统（IVF Electronic Witnessing System）",
+    "categories": [
+      "IVF设备"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "IVF生物安全柜",
+    "file": "68.IVF生物安全柜调研报告-3ed75405c6.md",
+    "priceMin": null,
+    "priceMax": null,
+    "summary": "",
+    "categories": [
+      "IVF设备"
+    ]
+  }
+]

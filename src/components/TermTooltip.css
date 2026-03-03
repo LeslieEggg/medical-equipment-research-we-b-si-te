@@ -1,0 +1,22 @@
+.term-tooltip {
+  color: #3b82f6;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #93c5fd;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.term-tooltip:hover {
+  color: #2563eb;
+  background-color: rgba(59, 130, 246, 0.1);
+  text-decoration-style: solid;
+}
+
+.term-tooltip:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}

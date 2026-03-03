@@ -1,0 +1,875 @@
+.price-comparison-page {
+  padding: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.125rem;
+  color: #666;
+}
+
+/* 头部 */
+.price-header {
+  margin-bottom: 2rem;
+}
+
+.price-title {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.price-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* 统计卡片容器 */
+.statistics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statistics-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* 价格概览 */
+.price-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.price-stat {
+  text-align: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.price-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.price-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.price-value.price-low {
+  color: #22c55e;
+}
+
+.price-value.price-high {
+  color: #ef4444;
+}
+
+/* 分类统计 */
+.category-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.category-stat-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.category-name {
+  min-width: 80px;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.category-price-bar {
+  flex: 1;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.category-price-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+.category-avg-price {
+  min-width: 50px;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.category-count {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* 区间统计 */
+.range-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.range-stat-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.range-name {
+  min-width: 80px;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.range-bar {
+  flex: 1;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.range-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e 0%, #eab308 50%, #ef4444 100%);
+  transition: width 0.3s ease;
+}
+
+.range-count {
+  min-width: 50px;
+  text-align: right;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* 控制面板 */
+.price-controls {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 150px;
+}
+
+.control-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.control-select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.control-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* 价格表格 */
+.price-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.price-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.price-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.price-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.price-table tbody tr.row-lowest {
+  background-color: rgba(34, 197, 94, 0.1);
+}
+
+.price-table tbody tr.row-highest {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.price-table td {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.name-cell .device-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.name-cell .device-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.category-cell {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.category-badge {
+  background: #f0f0f0;
+  color: #666;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.price-cell {
+  font-weight: 600;
+  color: #333;
+}
+
+.price-cell.highlight-low {
+  color: #22c55e;
+  background-color: rgba(34, 197, 94, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.price-cell.highlight-high {
+  color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.range-cell {
+  color: #666;
+}
+
+.status-cell {
+  text-align: center;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-badge.status-lowest {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.status-highest {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge.status-normal {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.status-badge.status-pending {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+/* 排序按钮 */
+.sort-button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sort-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.sort-button.active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.sort-icon {
+  font-size: 0.75rem;
+}
+
+/* 价格差异分析 */
+.price-diff-analysis {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.analysis-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.analysis-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.analysis-label {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.analysis-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .price-comparison-page {
+    padding: 1rem;
+  }
+
+  .price-title {
+    font-size: 1.5rem;
+  }
+
+  .statistics-container {
+    grid-template-columns: 1fr;
+  }
+
+  .price-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .price-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .control-group {
+    width: 100%;
+  }
+
+  /* 表格响应式 */
+  .price-table-container {
+    overflow-x: auto;
+  }
+
+  .price-table {
+    min-width: 600px;
+  }
+
+  .analysis-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 小屏幕适配 */
+@media (max-width: 375px) {
+  .price-comparison-page {
+    padding: 0.75rem;
+  }
+
+  .price-title {
+    font-size: 1.25rem;
+  }
+
+  .price-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .statistics-card {
+    padding: 1rem;
+  }
+
+  .statistics-title {
+    font-size: 1rem;
+  }
+
+  .category-name,
+  .range-name {
+    min-width: 60px;
+    font-size: 0.8125rem;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .price-comparison-page {
+    padding: 0;
+  }
+
+  .statistics-container {
+    grid-template-columns: 1fr;
+  }
+
+  .price-table {
+    page-break-inside: auto;
+  }
+
+  .price-table tbody tr {
+    page-break-inside: avoid;
+  }
+}
+
+/* 图表区域 */
+.charts-section {
+  margin-top: 2rem;
+}
+
+.charts-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.chart-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.chart-subtitle {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+}
+
+.chart-container {
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.chart-bars.horizontal {
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  min-height: 250px;
+  gap: 0.75rem;
+}
+
+.chart-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 60px;
+  max-width: 80px;
+}
+
+.chart-bar-wrapper.horizontal {
+  flex-direction: row;
+  width: 100%;
+  min-width: unset;
+  max-width: unset;
+  gap: 0.75rem;
+}
+
+.chart-bar {
+  width: 100%;
+  height: 200px;
+  background: #f0f0f0;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.chart-bar.horizontal {
+  width: 100%;
+  height: 30px;
+  border-radius: 0 6px 6px 0;
+}
+
+.chart-bar-fill {
+  width: 100%;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  border-radius: 6px 6px 0 0;
+  transition: height 0.5s ease;
+  position: absolute;
+  bottom: 0;
+}
+
+.chart-bar-fill.horizontal {
+  position: relative;
+  height: 100%;
+  border-radius: 0 6px 6px 0;
+  transition: width 0.5s ease;
+}
+
+.chart-bar-label {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.chart-bar-label.horizontal {
+  margin-top: 0;
+  min-width: 80px;
+  text-align: right;
+}
+
+.chart-bar-value {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.chart-bar-value.horizontal {
+  margin-top: 0;
+  min-width: 50px;
+}
+
+/* 预算图表 */
+.budget-chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.budget-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.budget-input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.budget-input-field {
+  flex: 1;
+  max-width: 200px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.budget-input-field:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.budget-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.budget-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.budget-bar-label {
+  min-width: 120px;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.budget-bar-container {
+  flex: 1;
+  height: 24px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.budget-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.budget-bar-fill.min-budget {
+  background: linear-gradient(90deg, #22c55e 0%, #4ade80 100%);
+}
+
+.budget-bar-fill.max-budget {
+  background: linear-gradient(90deg, #eab308 0%, #fcd34d 100%);
+}
+
+.budget-bar-fill.goal-budget {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.budget-bar-value {
+  min-width: 60px;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.budget-status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.budget-status-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.budget-status-label {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.budget-status-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.budget-status-value.over {
+  color: #ef4444;
+}
+
+.budget-status-value.warning {
+  color: #eab308;
+}
+
+.budget-status-value.ok {
+  color: #22c55e;
+}
+
+.budget-chart-link {
+  text-align: center;
+}
+
+.view-list-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.view-list-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.empty-budget-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.empty-budget-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.empty-budget-state p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.add-budget-items-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #667eea;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.add-budget-items-link:hover {
+  background-color: #667eea;
+  color: white;
+}
+
+/* 图表响应式 */
+@media (max-width: 768px) {
+  .chart-bars {
+    gap: 0.5rem;
+  }
+
+  .chart-bar {
+    height: 150px;
+  }
+
+  .chart-bar-wrapper {
+    min-width: 50px;
+    max-width: 60px;
+  }
+
+  .chart-bar-label,
+  .chart-bar-value {
+    font-size: 0.6875rem;
+  }
+
+  .budget-bar-label {
+    min-width: 80px;
+    font-size: 0.75rem;
+  }
+
+  .budget-status {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .budget-input-field {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .chart-bars {
+    gap: 0.25rem;
+  }
+
+  .chart-bar-wrapper {
+    min-width: 40px;
+    max-width: 50px;
+  }
+
+  .chart-bar-label,
+  .chart-bar-value {
+    font-size: 0.625rem;
+  }
+
+  .chart-title {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,1381 @@
+{
+  "ICU": {
+    "chinese": "重症监护病房",
+    "english": "Intensive Care Unit",
+    "definition": "医院内专门收治危重病人的监护病房，配备先进的监护设备和生命支持系统",
+    "category": "医疗设施",
+    "importance": "核心"
+  },
+  "GE": {
+    "chinese": "通用电气医疗",
+    "english": "General Electric Healthcare",
+    "definition": "全球领先的医疗设备制造商，提供影像、监护、诊断等设备",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "RH": {
+    "chinese": "相对湿度",
+    "english": "Relative Humidity",
+    "definition": "空气中水蒸气含量与饱和水蒸气含量的比值，以百分比表示",
+    "category": "环境参数",
+    "importance": "技术参数"
+  },
+  "HIS": {
+    "chinese": "医院信息系统",
+    "english": "Hospital Information System",
+    "definition": "用于管理医院日常运营的综合信息系统，包括患者信息、医嘱、药品管理等",
+    "category": "信息系统",
+    "importance": "重要"
+  },
+  "CT": {
+    "chinese": "计算机断层扫描",
+    "english": "Computed Tomography",
+    "definition": "使用X射线和计算机技术生成人体横断面图像的影像诊断设备",
+    "category": "影像诊断",
+    "importance": "核心"
+  },
+  "II": {
+    "chinese": "第二代",
+    "english": "Type II",
+    "definition": "通常指某种设备的第二代产品或型号",
+    "category": "型号标识",
+    "importance": "参考"
+  },
+  "ECG": {
+    "chinese": "心电图",
+    "english": "Electrocardiogram",
+    "definition": "记录心脏电活动的检查方法，用于诊断心律失常、心肌缺血等心脏疾病",
+    "category": "诊断技术",
+    "importance": "核心"
+  },
+  "HEPA": {
+    "chinese": "高效空气过滤器",
+    "english": "High Efficiency Particulate Air",
+    "definition": "能够过滤 99.97% 以上直径 0.3 微米颗粒物的空气过滤器",
+    "category": "过滤技术",
+    "importance": "重要"
+  },
+  "PCV": {
+    "chinese": "压力控制通气",
+    "english": "Pressure Controlled Ventilation",
+    "definition": "呼吸机的一种通气模式，以预设压力为目标进行机械通气",
+    "category": "呼吸机模式",
+    "importance": "核心"
+  },
+  "NIBP": {
+    "chinese": "无创血压",
+    "english": "Non-Invasive Blood Pressure",
+    "definition": "通过袖带等非侵入性方法测量的血压值",
+    "category": "监护参数",
+    "importance": "核心"
+  },
+  "NICU": {
+    "chinese": "新生儿重症监护病房",
+    "english": "Neonatal Intensive Care Unit",
+    "definition": "专门收治危重新生儿的监护病房，配备新生儿专用监护设备",
+    "category": "医疗设施",
+    "importance": "核心"
+  },
+  "PSV": {
+    "chinese": "压力支持通气",
+    "english": "Pressure Support Ventilation",
+    "definition": "呼吸机的一种辅助通气模式，患者触发吸气，呼吸机提供预设压力支持",
+    "category": "呼吸机模式",
+    "importance": "核心"
+  },
+  "SIMV": {
+    "chinese": "同步间歇指令通气",
+    "english": "Synchronized Intermittent Mandatory Ventilation",
+    "definition": "呼吸机的一种通气模式，结合控制通气和自主呼吸",
+    "category": "呼吸机模式",
+    "importance": "核心"
+  },
+  "VCV": {
+    "chinese": "容量控制通气",
+    "english": "Volume Controlled Ventilation",
+    "definition": "呼吸机的一种通气模式，以预设潮气量为目标进行机械通气",
+    "category": "呼吸机模式",
+    "importance": "核心"
+  },
+  "IBP": {
+    "chinese": "有创血压",
+    "english": "Invasive Blood Pressure",
+    "definition": "通过动脉导管直接测量的血压值，提供连续、准确的血压监测",
+    "category": "监护参数",
+    "importance": "核心"
+  },
+  "PEEP": {
+    "chinese": "呼气末正压",
+    "english": "Positive End-Expiratory Pressure",
+    "definition": "呼吸机设置参数，呼气末保持气道正压，防止肺泡塌陷",
+    "category": "呼吸机参数",
+    "importance": "核心"
+  },
+  "CC": {
+    "chinese": "重症监护",
+    "english": "Critical Care",
+    "definition": "对危重病人进行的密切监护和治疗",
+    "category": "医疗服务",
+    "importance": "重要"
+  },
+  "RESP": {
+    "chinese": "呼吸",
+    "english": "Respiration",
+    "definition": "人体的呼吸运动，包括吸气和呼气过程",
+    "category": "生理参数",
+    "importance": "核心"
+  },
+  "HDF": {
+    "chinese": "血液透析滤过",
+    "english": "Hemodiafiltration",
+    "definition": "结合血液透析和血液滤过的肾脏替代治疗方法",
+    "category": "透析技术",
+    "importance": "核心"
+  },
+  "CPAP": {
+    "chinese": "持续气道正压",
+    "english": "Continuous Positive Airway Pressure",
+    "definition": "呼吸机的一种通气模式，在整个呼吸周期保持气道正压",
+    "category": "呼吸机模式",
+    "importance": "核心"
+  },
+  "HD": {
+    "chinese": "血液透析",
+    "english": "Hemodialysis",
+    "definition": "利用透析器清除血液中代谢废物和多余水分的肾脏替代治疗方法",
+    "category": "透析技术",
+    "importance": "核心"
+  },
+  "TEMP": {
+    "chinese": "体温",
+    "english": "Temperature",
+    "definition": "人体的温度，是生命体征监测的基本参数之一",
+    "category": "生理参数",
+    "importance": "核心"
+  },
+  "APRV": {
+    "chinese": "气道压力释放通气",
+    "english": "Airway Pressure Release Ventilation",
+    "definition": "呼吸机的一种高级通气模式，通过周期性释放气道压力实现通气",
+    "category": "呼吸机模式",
+    "importance": "重要"
+  },
+  "MRI": {
+    "chinese": "磁共振成像",
+    "english": "Magnetic Resonance Imaging",
+    "definition": "利用强磁场和射频脉冲生成人体详细图像的影像诊断技术",
+    "category": "影像诊断",
+    "importance": "核心"
+  },
+  "IVUS": {
+    "chinese": "血管内超声",
+    "english": "Intravascular Ultrasound",
+    "definition": "将超声探头置入血管内进行成像的诊断技术，用于评估血管病变",
+    "category": "影像诊断",
+    "importance": "重要"
+  },
+  "LIS": {
+    "chinese": "实验室信息系统",
+    "english": "Laboratory Information System",
+    "definition": "用于管理实验室检验流程和数据的信息系统",
+    "category": "信息系统",
+    "importance": "重要"
+  },
+  "PIP": {
+    "chinese": "吸气峰压",
+    "english": "Peak Inspiratory Pressure",
+    "definition": "呼吸机送气过程中气道内的最高压力值",
+    "category": "呼吸机参数",
+    "importance": "重要"
+  },
+  "NMPA": {
+    "chinese": "国家药品监督管理局",
+    "english": "National Medical Products Administration",
+    "definition": "中国负责医疗器械监管的政府机构",
+    "category": "监管机构",
+    "importance": "参考"
+  },
+  "AI": {
+    "chinese": "人工智能",
+    "english": "Artificial Intelligence",
+    "definition": "模拟人类智能的技术，在医疗领域用于辅助诊断和决策",
+    "category": "技术",
+    "importance": "重要"
+  },
+  "CFR": {
+    "chinese": "血流储备分数",
+    "english": "Coronary Flow Reserve",
+    "definition": "评估冠状动脉血流储备的指标，用于判断冠脉狭窄程度",
+    "category": "诊断参数",
+    "importance": "重要"
+  },
+  "BIS": {
+    "chinese": "脑电双频指数",
+    "english": "Bispectral Index",
+    "definition": "用于监测麻醉深度的脑电图参数",
+    "category": "监护参数",
+    "importance": "重要"
+  },
+  "NAVA": {
+    "chinese": "神经调节通气辅助",
+    "english": "Neurally Adjusted Ventilatory Assist",
+    "definition": "根据患者膈肌电活动调节呼吸机支持的通气模式",
+    "category": "呼吸机模式",
+    "importance": "高级"
+  },
+  "NIRS": {
+    "chinese": "近红外光谱",
+    "english": "Near-Infrared Spectroscopy",
+    "definition": "利用近红外光监测组织血氧饱和度的技术",
+    "category": "监测技术",
+    "importance": "重要"
+  },
+  "PRVC": {
+    "chinese": "压力调节容量控制",
+    "english": "Pressure Regulated Volume Control",
+    "definition": "呼吸机的一种智能通气模式，自动调节压力以达到目标潮气量",
+    "category": "呼吸机模式",
+    "importance": "重要"
+  },
+  "ASV": {
+    "chinese": "自适应支持通气",
+    "english": "Adaptive Support Ventilation",
+    "definition": "呼吸机的一种智能通气模式，根据患者呼吸力学自动调节参数",
+    "category": "呼吸机模式",
+    "importance": "重要"
+  },
+  "YY": {
+    "chinese": "医疗用氧",
+    "english": "Medical Oxygen",
+    "definition": "用于医疗目的的高纯度氧气",
+    "category": "医疗气体",
+    "importance": "参考"
+  },
+  "PW": {
+    "chinese": "脉冲波",
+    "english": "Pulse Wave",
+    "definition": "血管内压力变化的波形，用于评估血管弹性",
+    "category": "生理信号",
+    "importance": "重要"
+  },
+  "CW": {
+    "chinese": "胸壁",
+    "english": "Chest Wall",
+    "definition": "由肋骨、肌肉等构成的胸廓结构",
+    "category": "解剖结构",
+    "importance": "参考"
+  },
+  "RI": {
+    "chinese": "阻力指数",
+    "english": "Resistance Index",
+    "definition": "多普勒超声中评估血管阻力的参数",
+    "category": "诊断参数",
+    "importance": "重要"
+  },
+  "COB": {
+    "chinese": "芯片级封装",
+    "english": "Chip on Board",
+    "definition": "电子元件封装技术，常用于医疗设备的显示屏和传感器",
+    "category": "电子技术",
+    "importance": "参考"
+  },
+  "IVF": {
+    "chinese": "体外受精",
+    "english": "In Vitro Fertilization",
+    "definition": "将卵子和精子在体外结合形成胚胎的辅助生殖技术",
+    "category": "生殖技术",
+    "importance": "核心"
+  },
+  "PICU": {
+    "chinese": "儿科重症监护病房",
+    "english": "Pediatric Intensive Care Unit",
+    "definition": "专门收治危重儿童的监护病房",
+    "category": "医疗设施",
+    "importance": "核心"
+  },
+  "CDFI": {
+    "chinese": "彩色多普勒血流成像",
+    "english": "Color Doppler Flow Imaging",
+    "definition": "利用多普勒效应显示血流方向和速度的超声技术",
+    "category": "影像诊断",
+    "importance": "核心"
+  },
+  "ESCO": {
+    "chinese": "艾斯克",
+    "english": "ESCO Medical",
+    "definition": "医疗设备品牌，专注于实验室和IVF设备",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "DICOM": {
+    "chinese": "医学数字成像通信标准",
+    "english": "Digital Imaging and Communications in Medicine",
+    "definition": "医学影像设备和系统之间传输数据的标准协议",
+    "category": "信息标准",
+    "importance": "重要"
+  },
+  "PACS": {
+    "chinese": "影像存档和通信系统",
+    "english": "Picture Archiving and Communication System",
+    "definition": "用于存储、管理和传输医学影像的信息系统",
+    "category": "信息系统",
+    "importance": "重要"
+  },
+  "PGD": {
+    "chinese": "胚胎植入前遗传学诊断",
+    "english": "Preimplantation Genetic Diagnosis",
+    "definition": "在胚胎植入前进行遗传学检测的技术",
+    "category": "生殖技术",
+    "importance": "重要"
+  },
+  "NA": {
+    "chinese": "不适用",
+    "english": "Not Applicable",
+    "definition": "表示某项参数或功能不适用",
+    "category": "通用标识",
+    "importance": "参考"
+  },
+  "HDMI": {
+    "chinese": "高清多媒体接口",
+    "english": "High-Definition Multimedia Interface",
+    "definition": "用于传输高清视频和音频的数字接口",
+    "category": "接口标准",
+    "importance": "参考"
+  },
+  "SDI": {
+    "chinese": "串行数字接口",
+    "english": "Serial Digital Interface",
+    "definition": "用于传输数字视频信号的专业接口",
+    "category": "接口标准",
+    "importance": "参考"
+  },
+  "ZILOS": {
+    "chinese": "齐洛斯",
+    "english": "ZILOS Medical",
+    "definition": "医疗设备品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "ACT": {
+    "chinese": "激活凝血时间",
+    "english": "Activated Clotting Time",
+    "definition": "监测血液凝固时间的指标，常用于手术中肝素化监测",
+    "category": "凝血功能",
+    "importance": "核心"
+  },
+  "GB": {
+    "chinese": "国标",
+    "english": "Guobiao (Chinese National Standard)",
+    "definition": "中国国家标准，医疗器械需符合相关GB标准",
+    "category": "标准规范",
+    "importance": "参考"
+  },
+  "TDI": {
+    "chinese": "组织多普勒成像",
+    "english": "Tissue Doppler Imaging",
+    "definition": "利用多普勒效应评估心肌运动速度的超声技术",
+    "category": "影像诊断",
+    "importance": "重要"
+  },
+  "ECMO": {
+    "chinese": "体外膜肺氧合",
+    "english": "Extracorporeal Membrane Oxygenation",
+    "definition": "通过体外循环提供长时间心肺支持的技术",
+    "category": "生命支持",
+    "importance": "核心"
+  },
+  "HFO": {
+    "chinese": "高频振荡通气",
+    "english": "High Frequency Oscillatory Ventilation",
+    "definition": "以极高频率（通常>60次/分）低潮气量进行通气的呼吸机模式",
+    "category": "呼吸机模式",
+    "importance": "高级"
+  },
+  "OCTAX": {
+    "chinese": "奥克塔克斯",
+    "english": "OCTAX Medical",
+    "definition": "医疗设备品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "FFR": {
+    "chinese": "血流储备分数",
+    "english": "Fractional Flow Reserve",
+    "definition": "评估冠状动脉狭窄功能学严重程度的指标",
+    "category": "诊断参数",
+    "importance": "核心"
+  },
+  "EXA": {
+    "chinese": "艾可萨",
+    "english": "EXA Medical",
+    "definition": "医疗设备品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "CSSD": {
+    "chinese": "消毒供应中心",
+    "english": "Central Sterile Supply Department",
+    "definition": "医院负责医疗器械清洗、消毒和灭菌的部门",
+    "category": "医疗设施",
+    "importance": "重要"
+  },
+  "EX": {
+    "chinese": "示例",
+    "english": "Example",
+    "definition": "表示示例或典型情况",
+    "category": "通用标识",
+    "importance": "参考"
+  },
+  "NICO": {
+    "chinese": "无创心输出量",
+    "english": "Non-Invasive Cardiac Output",
+    "definition": "通过非侵入性方法测量心脏每分钟泵出的血量",
+    "category": "监护参数",
+    "importance": "重要"
+  },
+  "UV": {
+    "chinese": "紫外线",
+    "english": "Ultraviolet",
+    "definition": "用于消毒灭菌的电磁波，波长 100-400nm",
+    "category": "消毒技术",
+    "importance": "重要"
+  },
+  "AGSS": {
+    "chinese": "麻醉废气清除系统",
+    "english": "Anesthetic Gas Scavenging System",
+    "definition": "用于清除手术室内麻醉废气的系统",
+    "category": "安全系统",
+    "importance": "重要"
+  },
+  "UPS": {
+    "chinese": "不间断电源",
+    "english": "Uninterruptible Power Supply",
+    "definition": "在主电源故障时提供应急电源的设备",
+    "category": "电源设备",
+    "importance": "重要"
+  },
+  "DQE": {
+    "chinese": "侦探量子效率",
+    "english": "Detective Quantum Efficiency",
+    "definition": "衡量X射线探测器成像效率的指标",
+    "category": "技术参数",
+    "importance": "重要"
+  },
+  "BVM": {
+    "chinese": "球囊面罩通气",
+    "english": "Bag-Valve-Mask",
+    "definition": "一种手动通气设备，用于急救和麻醉诱导",
+    "category": "急救设备",
+    "importance": "核心"
+  },
+  "DTI": {
+    "chinese": "弥散张量成像",
+    "english": "Diffusion Tensor Imaging",
+    "definition": "MRI的一种特殊成像技术，用于显示神经纤维束走向",
+    "category": "影像诊断",
+    "importance": "高级"
+  },
+  "SWI": {
+    "chinese": "磁敏感加权成像",
+    "english": "Susceptibility Weighted Imaging",
+    "definition": "MRI的一种特殊成像技术，对铁质沉积和出血敏感",
+    "category": "影像诊断",
+    "importance": "高级"
+  },
+  "WD": {
+    "chinese": "水蒸馏",
+    "english": "Water Distillation",
+    "definition": "通过蒸馏制备纯水的过程",
+    "category": "实验室技术",
+    "importance": "参考"
+  },
+  "ZOLL": {
+    "chinese": "佐尔",
+    "english": "ZOLL Medical",
+    "definition": "医疗设备品牌，专注于急救和除颤设备",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "LMD": {
+    "chinese": "低机械指数",
+    "english": "Low Mechanical Index",
+    "definition": "超声成像中的机械指数设置，用于微泡造影成像",
+    "category": "超声参数",
+    "importance": "高级"
+  },
+  "AMSCO": {
+    "chinese": "艾姆斯科",
+    "english": "AMSCO Medical",
+    "definition": "医疗设备品牌，专注于消毒灭菌设备",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "TEE": {
+    "chinese": "经食管超声心动图",
+    "english": "Transesophageal Echocardiography",
+    "definition": "将超声探头置入食管内进行心脏成像的检查方法",
+    "category": "影像诊断",
+    "importance": "重要"
+  },
+  "PWI": {
+    "chinese": "灌注加权成像",
+    "english": "Perfusion Weighted Imaging",
+    "definition": "MRI的一种特殊成像技术，用于评估组织血流灌注",
+    "category": "影像诊断",
+    "importance": "重要"
+  },
+  "EEG": {
+    "chinese": "脑电图",
+    "english": "Electroencephalogram",
+    "definition": "记录大脑电活动的检查方法，用于诊断癫痫、脑病等",
+    "category": "诊断技术",
+    "importance": "核心"
+  },
+  "THI": {
+    "chinese": "组织谐波成像",
+    "english": "Tissue Harmonic Imaging",
+    "definition": "利用组织产生的谐波信号进行超声成像的技术",
+    "category": "超声技术",
+    "importance": "重要"
+  },
+  "SBT": {
+    "chinese": "自主呼吸试验",
+    "english": "Spontaneous Breathing Trial",
+    "definition": "评估患者能否脱离呼吸机的测试",
+    "category": "脱机评估",
+    "importance": "核心"
+  },
+  "HLG": {
+    "chinese": "混合对数伽马",
+    "english": "Hybrid Log-Gamma",
+    "definition": "一种高动态范围（HDR）视频传输标准",
+    "category": "视频技术",
+    "importance": "参考"
+  },
+  "EMR": {
+    "chinese": "电子病历",
+    "english": "Electronic Medical Record",
+    "definition": "数字化的患者病历记录系统",
+    "category": "信息系统",
+    "importance": "重要"
+  },
+  "HR": {
+    "chinese": "心率",
+    "english": "Heart Rate",
+    "definition": "心脏每分钟跳动的次数，正常成人安静时为 60-100 次/分",
+    "category": "生理参数",
+    "importance": "核心"
+  },
+  "SK": {
+    "chinese": "皮肤",
+    "english": "Skin",
+    "definition": "人体最大的器官，具有保护、感觉、调节体温等功能",
+    "category": "解剖结构",
+    "importance": "参考"
+  },
+  "HPC": {
+    "chinese": "高性能计算",
+    "english": "High Performance Computing",
+    "definition": "用于处理大量数据和复杂计算的计算技术",
+    "category": "计算技术",
+    "importance": "参考"
+  },
+  "ICSI": {
+    "chinese": "卵胞浆内单精子注射",
+    "english": "Intracytoplasmic Sperm Injection",
+    "definition": "将单个精子直接注射到卵细胞内的辅助生殖技术",
+    "category": "生殖技术",
+    "importance": "核心"
+  },
+  "EWS": {
+    "chinese": "早期预警评分",
+    "english": "Early Warning Score",
+    "definition": "基于生命体征评估患者病情恶化风险的评分系统",
+    "category": "评估工具",
+    "importance": "重要"
+  },
+  "XZ": {
+    "chinese": "心脏",
+    "english": "Heart (Xinzang)",
+    "definition": "人体循环系统的核心器官，负责泵血",
+    "category": "解剖结构",
+    "importance": "参考"
+  },
+  "WRY": {
+    "chinese": "沃瑞",
+    "english": "WORY Medical",
+    "definition": "医疗设备品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "APTT": {
+    "chinese": "活化部分凝血活酶时间",
+    "english": "Activated Partial Thromboplastin Time",
+    "definition": "检测内源性凝血功能的指标，用于监测肝素抗凝治疗",
+    "category": "凝血功能",
+    "importance": "核心"
+  },
+  "NST": {
+    "chinese": "无应激试验",
+    "english": "Non-Stress Test",
+    "definition": "评估胎儿宫内安危的产前检查方法",
+    "category": "产前检查",
+    "importance": "重要"
+  },
+  "MRS": {
+    "chinese": "磁共振波谱",
+    "english": "Magnetic Resonance Spectroscopy",
+    "definition": "利用磁共振技术分析组织化学成分的方法",
+    "category": "影像诊断",
+    "importance": "高级"
+  },
+  "IR": {
+    "chinese": "介入放射学",
+    "english": "Interventional Radiology",
+    "definition": "在影像引导下进行微创诊断和治疗的医学分支",
+    "category": "医学专科",
+    "importance": "重要"
+  },
+  "WS": {
+    "chinese": "工作站",
+    "english": "Workstation",
+    "definition": "用于医学影像处理和分析的高性能计算机",
+    "category": "设备类型",
+    "importance": "参考"
+  },
+  "APC": {
+    "chinese": "房性早搏",
+    "english": "Atrial Premature Contraction",
+    "definition": "起源于心房的异位搏动，是常见的心律失常",
+    "category": "心律失常",
+    "importance": "重要"
+  },
+  "ESS": {
+    "chinese": "嗜睡量表",
+    "english": "Epworth Sleepiness Scale",
+    "definition": "评估日间嗜睡程度的问卷工具",
+    "category": "评估工具",
+    "importance": "参考"
+  },
+  "VR": {
+    "chinese": "虚拟现实",
+    "english": "Virtual Reality",
+    "definition": "用于医学培训和手术模拟的沉浸式技术",
+    "category": "技术",
+    "importance": "参考"
+  },
+  "ROSA": {
+    "chinese": "罗萨",
+    "english": "ROSA Surgical Robot",
+    "definition": "手术机器人品牌，用于神经外科和骨科手术",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "CCL": {
+    "chinese": "冠状动脉循环",
+    "english": "Coronary Circulation Loop",
+    "definition": "心脏自身的血液循环系统",
+    "category": "循环系统",
+    "importance": "参考"
+  },
+  "AEC": {
+    "chinese": "自动曝光控制",
+    "english": "Automatic Exposure Control",
+    "definition": "X射线设备自动调节曝光参数的功能",
+    "category": "设备功能",
+    "importance": "重要"
+  },
+  "AC": {
+    "chinese": "交流电",
+    "english": "Alternating Current",
+    "definition": "周期性改变方向的电流，医疗设备的常用电源类型",
+    "category": "电源类型",
+    "importance": "参考"
+  },
+  "CTO": {
+    "chinese": "慢性完全闭塞",
+    "english": "Chronic Total Occlusion",
+    "definition": "冠状动脉完全闭塞超过 3 个月的病变",
+    "category": "血管病变",
+    "importance": "重要"
+  },
+  "MCO": {
+    "chinese": "管理式医疗组织",
+    "english": "Managed Care Organization",
+    "definition": "管理医疗保险和医疗服务的机构",
+    "category": "医疗管理",
+    "importance": "参考"
+  },
+  "CO": {
+    "chinese": "心输出量",
+    "english": "Cardiac Output",
+    "definition": "心脏每分钟泵出的血液量，正常值为 4-8 升/分",
+    "category": "生理参数",
+    "importance": "核心"
+  },
+  "BQ": {
+    "chinese": "冰球",
+    "english": "Ice Ball",
+    "definition": "冷冻治疗中形成的冰冻区域",
+    "category": "治疗技术",
+    "importance": "参考"
+  },
+  "HDR": {
+    "chinese": "高剂量率",
+    "english": "High Dose Rate",
+    "definition": "放射治疗中的高剂量率照射方式",
+    "category": "放疗技术",
+    "importance": "重要"
+  },
+  "PT": {
+    "chinese": "凝血酶原时间",
+    "english": "Prothrombin Time",
+    "definition": "检测外源性凝血功能的指标，用于监测华法林抗凝治疗",
+    "category": "凝血功能",
+    "importance": "核心"
+  },
+  "POLARIS": {
+    "chinese": "北极星",
+    "english": "Polaris Medical System",
+    "definition": "医疗导航系统品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "PNA": {
+    "chinese": "肺炎",
+    "english": "Pneumonia",
+    "definition": "肺部感染性疾病，是常见的呼吸系统疾病",
+    "category": "疾病",
+    "importance": "重要"
+  },
+  "IIC": {
+    "chinese": "体内异物中心",
+    "english": "Internal Implantable Device Center",
+    "definition": "管理植入性医疗器械的机构",
+    "category": "医疗管理",
+    "importance": "参考"
+  },
+  "YS": {
+    "chinese": "医生",
+    "english": "Doctor (Yisheng)",
+    "definition": "医疗专业人员",
+    "category": "人员",
+    "importance": "参考"
+  },
+  "TI": {
+    "chinese": "三碘甲状腺原氨酸",
+    "english": "Triiodothyronine",
+    "definition": "甲状腺激素的一种，调节新陈代谢",
+    "category": "激素",
+    "importance": "重要"
+  },
+  "MFC": {
+    "chinese": "多功能显示器",
+    "english": "Multi-Function Display",
+    "definition": "可显示多种信息的专业显示器",
+    "category": "设备组件",
+    "importance": "参考"
+  },
+  "SVR": {
+    "chinese": "全身血管阻力",
+    "english": "Systemic Vascular Resistance",
+    "definition": "血液在全身血管中流动的阻力",
+    "category": "血流动力学",
+    "importance": "重要"
+  },
+  "DIC": {
+    "chinese": "弥漫性血管内凝血",
+    "english": "Disseminated Intravascular Coagulation",
+    "definition": "严重的凝血功能障碍，可导致出血和血栓",
+    "category": "凝血疾病",
+    "importance": "核心"
+  },
+  "AR": {
+    "chinese": "增强现实",
+    "english": "Augmented Reality",
+    "definition": "在现实场景上叠加数字信息的技术",
+    "category": "技术",
+    "importance": "参考"
+  },
+  "NT": {
+    "chinese": "鼻饲管",
+    "english": "Nasogastric Tube",
+    "definition": "经鼻腔插入胃内的导管，用于喂养或减压",
+    "category": "医疗用品",
+    "importance": "重要"
+  },
+  "BQF": {
+    "chinese": "冰球冻结",
+    "english": "Ice Ball Freezing",
+    "definition": "冷冻治疗技术中冰球形成的过程",
+    "category": "治疗技术",
+    "importance": "参考"
+  },
+  "PE": {
+    "chinese": "肺栓塞",
+    "english": "Pulmonary Embolism",
+    "definition": "血栓阻塞肺动脉的严重疾病",
+    "category": "疾病",
+    "importance": "核心"
+  },
+  "PQ": {
+    "chinese": "电源质量",
+    "english": "Power Quality",
+    "definition": "电力供应的稳定性和质量",
+    "category": "电源系统",
+    "importance": "参考"
+  },
+  "ALA": {
+    "chinese": "氨基酮戊酸",
+    "english": "Aminolevulinic Acid",
+    "definition": "用于光动力诊断和治疗的药物",
+    "category": "药物",
+    "importance": "重要"
+  },
+  "TEG": {
+    "chinese": "血栓弹力图",
+    "english": "Thromboelastography",
+    "definition": "评估血液凝固全过程的全血检测方法",
+    "category": "凝血功能",
+    "importance": "重要"
+  },
+  "CV": {
+    "chinese": "心血管",
+    "english": "Cardiovascular",
+    "definition": "心脏和血管系统的总称",
+    "category": "系统分类",
+    "importance": "重要"
+  },
+  "HE": {
+    "chinese": "氦气",
+    "english": "Helium",
+    "definition": "用于MRI设备冷却的惰性气体",
+    "category": "气体",
+    "importance": "参考"
+  },
+  "PI": {
+    "chinese": "搏动指数",
+    "english": "Pulsatility Index",
+    "definition": "多普勒超声中评估血流搏动的参数",
+    "category": "诊断参数",
+    "importance": "重要"
+  },
+  "SA": {
+    "chinese": "窦性心律",
+    "english": "Sinus Arrhythmia",
+    "definition": "随呼吸变化的正常心律变异",
+    "category": "心律",
+    "importance": "参考"
+  },
+  "OCM": {
+    "chinese": "有机阴离子转运蛋白",
+    "english": "Organic Cation Transporter",
+    "definition": "参与药物代谢的转运蛋白",
+    "category": "生物化学",
+    "importance": "参考"
+  },
+  "MAQUET": {
+    "chinese": "马奎",
+    "english": "MAQUET Medical",
+    "definition": "医疗设备品牌，专注于手术室和ICU设备",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "AIS": {
+    "chinese": "急性缺血性卒中",
+    "english": "Acute Ischemic Stroke",
+    "definition": "因脑动脉堵塞导致的急性脑血管病",
+    "category": "疾病",
+    "importance": "核心"
+  },
+  "LVO": {
+    "chinese": "大血管闭塞",
+    "english": "Large Vessel Occlusion",
+    "definition": "颅内大动脉的急性闭塞，需紧急治疗",
+    "category": "血管病变",
+    "importance": "核心"
+  },
+  "BLT": {
+    "chinese": "布莱特",
+    "english": "BLT Medical",
+    "definition": "医疗设备品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "TR": {
+    "chinese": "三尖瓣反流",
+    "english": "Tricuspid Regurgitation",
+    "definition": "三尖瓣关闭不全导致的血液反流",
+    "category": "心脏疾病",
+    "importance": "重要"
+  },
+  "FCC": {
+    "chinese": "联邦通信委员会",
+    "english": "Federal Communications Commission",
+    "definition": "美国负责电子设备认证的监管机构",
+    "category": "监管机构",
+    "importance": "参考"
+  },
+  "MI": {
+    "chinese": "心肌梗死",
+    "english": "Myocardial Infarction",
+    "definition": "冠状动脉堵塞导致的心肌坏死，俗称心脏病发作",
+    "category": "疾病",
+    "importance": "核心"
+  },
+  "NVR": {
+    "chinese": "网络视频录像机",
+    "english": "Network Video Recorder",
+    "definition": "用于手术视频录制和存储的设备",
+    "category": "设备类型",
+    "importance": "参考"
+  },
+  "VIP": {
+    "chinese": "血管活性肠肽",
+    "english": "Vasoactive Intestinal Peptide",
+    "definition": "调节血管舒缩的神经肽",
+    "category": "生物活性物质",
+    "importance": "参考"
+  },
+  "QT": {
+    "chinese": "QT间期",
+    "english": "QT Interval",
+    "definition": "心电图上心室除极和复极的时间",
+    "category": "心电图参数",
+    "importance": "重要"
+  },
+  "AH": {
+    "chinese": "房性心动过速",
+    "english": "Atrial Hyperactivity",
+    "definition": "心房异常兴奋导致的心律失常",
+    "category": "心律失常",
+    "importance": "重要"
+  },
+  "SZ": {
+    "chinese": "深圳",
+    "english": "Shenzhen",
+    "definition": "中国医疗设备制造中心城市之一",
+    "category": "地名",
+    "importance": "参考"
+  },
+  "DX": {
+    "chinese": "诊断",
+    "english": "Diagnosis",
+    "definition": "疾病的识别和判断过程",
+    "category": "医疗过程",
+    "importance": "重要"
+  },
+  "RTCA": {
+    "chinese": "实时细胞分析",
+    "english": "Real-Time Cell Analysis",
+    "definition": "实时监测细胞状态的技术",
+    "category": "实验室技术",
+    "importance": "重要"
+  },
+  "MTBF": {
+    "chinese": "平均无故障时间",
+    "english": "Mean Time Between Failures",
+    "definition": "设备可靠性的衡量指标，平均两次故障间的运行时间",
+    "category": "技术参数",
+    "importance": "参考"
+  },
+  "VH": {
+    "chinese": "虚拟组织学",
+    "english": "Virtual Histology",
+    "definition": "利用IVUS数据分析血管壁成分的技术",
+    "category": "影像技术",
+    "importance": "高级"
+  },
+  "LR": {
+    "chinese": "左心室",
+    "english": "Left Room (Left Ventricle)",
+    "definition": "心脏的左心室腔",
+    "category": "解剖结构",
+    "importance": "参考"
+  },
+  "HP": {
+    "chinese": "惠普",
+    "english": "Hewlett-Packard",
+    "definition": "科技公司，提供医疗IT解决方案",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "VG": {
+    "chinese": "虚拟导管室",
+    "english": "Virtual Guidance",
+    "definition": "用于介入手术培训和模拟的系统",
+    "category": "培训系统",
+    "importance": "参考"
+  },
+  "NTC": {
+    "chinese": "负温度系数",
+    "english": "Negative Temperature Coefficient",
+    "definition": "温度升高电阻降低的特性，用于温度传感器",
+    "category": "电子技术",
+    "importance": "参考"
+  },
+  "DP": {
+    "chinese": "舒张压",
+    "english": "Diastolic Pressure",
+    "definition": "心脏舒张时的动脉血压",
+    "category": "生理参数",
+    "importance": "核心"
+  },
+  "ATC": {
+    "chinese": "解剖治疗化学分类",
+    "english": "Anatomical Therapeutic Chemical",
+    "definition": "药物的分类编码系统",
+    "category": "药物分类",
+    "importance": "参考"
+  },
+  "FIR": {
+    "chinese": "远红外",
+    "english": "Far Infrared",
+    "definition": "波长较长的红外线，用于热疗",
+    "category": "物理治疗",
+    "importance": "参考"
+  },
+  "APP": {
+    "chinese": "应用程序",
+    "english": "Application",
+    "definition": "移动设备或计算机上运行的软件",
+    "category": "软件",
+    "importance": "参考"
+  },
+  "NSF": {
+    "chinese": "美国国家卫生基金会",
+    "english": "National Sanitation Foundation",
+    "definition": "负责医疗器械安全和卫生认证的机构",
+    "category": "认证机构",
+    "importance": "参考"
+  },
+  "SV": {
+    "chinese": "每搏输出量",
+    "english": "Stroke Volume",
+    "definition": "心脏每次搏动泵出的血液量",
+    "category": "生理参数",
+    "importance": "核心"
+  },
+  "OR": {
+    "chinese": "手术室",
+    "english": "Operating Room",
+    "definition": "进行外科手术的专用房间",
+    "category": "医疗设施",
+    "importance": "重要"
+  },
+  "ESG": {
+    "chinese": "电子手术导引",
+    "english": "Electronic Surgical Guidance",
+    "definition": "电子化的手术导航系统",
+    "category": "手术导航",
+    "importance": "参考"
+  },
+  "AED": {
+    "chinese": "自动体外除颤器",
+    "english": "Automated External Defibrillator",
+    "definition": "用于急救的便携式除颤设备",
+    "category": "急救设备",
+    "importance": "核心"
+  },
+  "QC": {
+    "chinese": "质量控制",
+    "english": "Quality Control",
+    "definition": "确保产品或服务质量的管理过程",
+    "category": "质量管理",
+    "importance": "重要"
+  },
+  "PG": {
+    "chinese": "前列腺素",
+    "english": "Prostaglandin",
+    "definition": "调节多种生理功能的脂质化合物",
+    "category": "生物活性物质",
+    "importance": "重要"
+  },
+  "SF": {
+    "chinese": "安全系数",
+    "english": "Safety Factor",
+    "definition": "工程设计中的安全裕度",
+    "category": "工程参数",
+    "importance": "参考"
+  },
+  "LVA": {
+    "chinese": "左心室辅助",
+    "english": "Left Ventricular Assist",
+    "definition": "辅助左心室功能的机械装置",
+    "category": "生命支持",
+    "importance": "核心"
+  },
+  "LAT": {
+    "chinese": "侧壁",
+    "english": "Lateral Wall",
+    "definition": "心腔的侧壁部分",
+    "category": "解剖结构",
+    "importance": "参考"
+  },
+  "RT": {
+    "chinese": "放疗",
+    "english": "Radiotherapy",
+    "definition": "利用放射线治疗肿瘤的方法",
+    "category": "肿瘤治疗",
+    "importance": "核心"
+  },
+  "AMIA": {
+    "chinese": "美国医学信息学协会",
+    "english": "American Medical Informatics Association",
+    "definition": "医学信息学的专业学术组织",
+    "category": "学术组织",
+    "importance": "参考"
+  },
+  "CTA": {
+    "chinese": "CT血管造影",
+    "english": "CT Angiography",
+    "definition": "利用CT技术显示血管的影像检查",
+    "category": "影像诊断",
+    "importance": "重要"
+  },
+  "TE": {
+    "chinese": "组织弹性",
+    "english": "Tissue Elasticity",
+    "definition": "组织的可变形特性，用于弹性成像",
+    "category": "组织特性",
+    "importance": "重要"
+  },
+  "TOMO": {
+    "chinese": "断层",
+    "english": "Tomography",
+    "definition": "切面成像的技术",
+    "category": "影像技术",
+    "importance": "重要"
+  },
+  "SP": {
+    "chinese": "收缩压",
+    "english": "Systolic Pressure",
+    "definition": "心脏收缩时的动脉血压",
+    "category": "生理参数",
+    "importance": "核心"
+  },
+  "RAS": {
+    "chinese": "肾素-血管紧张素系统",
+    "english": "Renin-Angiotensin System",
+    "definition": "调节血压和体液平衡的激素系统",
+    "category": "生理系统",
+    "importance": "重要"
+  },
+  "DVT": {
+    "chinese": "深静脉血栓",
+    "english": "Deep Vein Thrombosis",
+    "definition": "深静脉内形成的血栓，可导致肺栓塞",
+    "category": "血管疾病",
+    "importance": "核心"
+  },
+  "IABP": {
+    "chinese": "主动脉内球囊反搏",
+    "english": "Intra-Aortic Balloon Pump",
+    "definition": "辅助心脏功能的机械装置",
+    "category": "生命支持",
+    "importance": "核心"
+  },
+  "DI": {
+    "chinese": "诊断影像",
+    "english": "Diagnostic Imaging",
+    "definition": "用于疾病诊断的医学影像技术",
+    "category": "影像诊断",
+    "importance": "重要"
+  },
+  "COMEN": {
+    "chinese": "科曼",
+    "english": "COMEN Medical",
+    "definition": "医疗设备品牌，专注于监护设备",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "MR": {
+    "chinese": "磁共振",
+    "english": "Magnetic Resonance",
+    "definition": "MRI的简称，磁共振成像技术",
+    "category": "影像诊断",
+    "importance": "核心"
+  },
+  "NVIDIA": {
+    "chinese": "英伟达",
+    "english": "NVIDIA Corporation",
+    "definition": "GPU制造商，提供AI计算解决方案",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "OB": {
+    "chinese": "产科",
+    "english": "Obstetrics",
+    "definition": "医学专科，专注于妊娠和分娩",
+    "category": "医学专科",
+    "importance": "重要"
+  },
+  "CFI": {
+    "chinese": "冠状动脉血流成像",
+    "english": "Coronary Flow Imaging",
+    "definition": "显示冠状动脉血流的技术",
+    "category": "影像技术",
+    "importance": "重要"
+  },
+  "PDI": {
+    "chinese": "灌注密度指数",
+    "english": "Perfusion Density Index",
+    "definition": "评估组织灌注的参数",
+    "category": "诊断参数",
+    "importance": "重要"
+  },
+  "OCT": {
+    "chinese": "光学相干断层扫描",
+    "english": "Optical Coherence Tomography",
+    "definition": "利用光线生成高分辨率图像的影像技术",
+    "category": "影像诊断",
+    "importance": "重要"
+  },
+  "ARDS": {
+    "chinese": "急性呼吸窘迫综合征",
+    "english": "Acute Respiratory Distress Syndrome",
+    "definition": "严重的急性呼吸衰竭，需要机械通气",
+    "category": "呼吸疾病",
+    "importance": "核心"
+  },
+  "PPV": {
+    "chinese": "脉搏压变异",
+    "english": "Pulse Pressure Variation",
+    "definition": "评估液体反应性的参数",
+    "category": "监护参数",
+    "importance": "重要"
+  },
+  "PB": {
+    "chinese": "床旁",
+    "english": "Point-of-Care Bedside",
+    "definition": "在患者床边进行的诊断或治疗",
+    "category": "医疗模式",
+    "importance": "重要"
+  },
+  "ART": {
+    "chinese": "辅助生殖技术",
+    "english": "Assisted Reproductive Technology",
+    "definition": "帮助不孕不育患者怀孕的技术",
+    "category": "生殖技术",
+    "importance": "核心"
+  },
+  "FI": {
+    "chinese": "荧光成像",
+    "english": "Fluorescence Imaging",
+    "definition": "利用荧光物质进行成像的技术",
+    "category": "影像技术",
+    "importance": "重要"
+  },
+  "RFID": {
+    "chinese": "射频识别",
+    "english": "Radio Frequency Identification",
+    "definition": "用于医疗器械追踪和管理的技术",
+    "category": "信息技术",
+    "importance": "参考"
+  },
+  "TJA": {
+    "chinese": "全关节置换术",
+    "english": "Total Joint Arthroplasty",
+    "definition": "人工关节置换手术",
+    "category": "手术类型",
+    "importance": "重要"
+  },
+  "VIO": {
+    "chinese": "维奥",
+    "english": "VIO Medical",
+    "definition": "医疗设备品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "UL": {
+    "chinese": "美国保险商实验室",
+    "english": "Underwriters Laboratories",
+    "definition": "负责产品安全认证的机构",
+    "category": "认证机构",
+    "importance": "参考"
+  },
+  "BQFS": {
+    "chinese": "冰球冻结系统",
+    "english": "Ice Ball Freezing System",
+    "definition": "冷冻治疗系统",
+    "category": "治疗设备",
+    "importance": "参考"
+  },
+  "STORZ": {
+    "chinese": "史托斯",
+    "english": "KARL STORZ",
+    "definition": "医疗设备品牌，专注于内窥镜",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "INR": {
+    "chinese": "国际标准化比值",
+    "english": "International Normalized Ratio",
+    "definition": "标准化凝血功能指标，用于监测抗凝治疗",
+    "category": "凝血功能",
+    "importance": "核心"
+  },
+  "CRI": {
+    "chinese": "中心静脉压",
+    "english": "Central Venous Pressure",
+    "definition": "上腔静脉或右心房的压力",
+    "category": "血流动力学",
+    "importance": "重要"
+  },
+  "TRIVATO": {
+    "chinese": "特里瓦托",
+    "english": "TRIVATO Medical",
+    "definition": "医疗设备品牌名称",
+    "category": "品牌",
+    "importance": "参考"
+  },
+  "XML": {
+    "chinese": "可扩展标记语言",
+    "english": "Extensible Markup Language",
+    "definition": "用于存储和传输数据的标记语言",
+    "category": "数据格式",
+    "importance": "参考"
+  },
+  "YK": {
+    "chinese": "医用",
+    "english": "Medical Use (Yiyong)",
+    "definition": "表示医疗用途",
+    "category": "通用标识",
+    "importance": "参考"
+  },
+  "SWS": {
+    "chinese": "慢波睡眠",
+    "english": "Slow Wave Sleep",
+    "definition": "深度睡眠阶段",
+    "category": "睡眠分期",
+    "importance": "参考"
+  },
+  "DXA": {
+    "chinese": "双能X线吸收测量法",
+    "english": "Dual-energy X-ray Absorptiometry",
+    "definition": "WHO认证的骨质疏松诊断金标准",
+    "category": "影像诊断",
+    "importance": "核心"
+  },
+  "IVA": {
+    "chinese": "椎体骨折评估",
+    "english": "Instant Vertebral Assessment",
+    "definition": "DXA设备上的椎体成像功能",
+    "category": "诊断功能",
+    "importance": "重要"
+  },
+  "TECH": {
+    "chinese": "技术",
+    "english": "Technology",
+    "definition": "泛指各种技术",
+    "category": "通用标识",
+    "importance": "参考"
+  },
+  "CARE": {
+    "chinese": "关怀",
+    "english": "Care",
+    "definition": "医疗服务中的关怀照护",
+    "category": "通用标识",
+    "importance": "参考"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "categories": {
+    "departments": [
+      {
+        "id": "imaging",
+        "name": "影像科",
+        "description": "医学影像诊断相关设备",
+        "keywords": ["X线", "X光", "超声", "MRI", "CT", "骨密度", "影像"]
+      },
+      {
+        "id": "surgery",
+        "name": "手术室",
+        "description": "手术室使用的设备",
+        "keywords": ["手术", "麻醉", "电刀", "手术灯", "手术床"]
+      },
+      {
+        "id": "icu",
+        "name": "ICU",
+        "description": "重症监护病房设备",
+        "keywords": ["ICU", "监护", "呼吸机"]
+      },
+      {
+        "id": "dialysis",
+        "name": "透析室",
+        "description": "血液透析相关设备",
+        "keywords": ["透析", "血液净化"]
+      },
+      {
+        "id": "obstetrics",
+        "name": "产科",
+        "description": "产科和新生儿设备",
+        "keywords": ["产科", "胎儿", "新生儿", "婴儿"]
+      },
+      {
+        "id": "laboratory",
+        "name": "实验室",
+        "description": "医学实验室设备",
+        "keywords": ["培养箱", "显微镜", "实验室", "冷藏", "冷冻"]
+      },
+      {
+        "id": "ivf",
+        "name": "IVF中心",
+        "description": "辅助生殖设备",
+        "keywords": ["IVF", "显微操作", "胚胎"]
+      },
+      {
+        "id": "general",
+        "name": "通用设备",
+        "description": "跨科室使用的设备",
+        "keywords": ["输液泵", "吸引", "病床", "吊塔"]
+      }
+    ],
+    "functions": [
+      {
+        "id": "diagnosis",
+        "name": "诊断",
+        "description": "用于疾病诊断的设备"
+      },
+      {
+        "id": "monitoring",
+        "name": "监护",
+        "description": "用于生命体征监护的设备"
+      },
+      {
+        "id": "surgery",
+        "name": "手术",
+        "description": "用于外科手术的设备"
+      },
+      {
+        "id": "treatment",
+        "name": "治疗",
+        "description": "用于治疗疾病的设备"
+      },
+      {
+        "id": "support",
+        "name": "辅助",
+        "description": "辅助医疗工作的设备"
+      }
+    ]
+  }
+}

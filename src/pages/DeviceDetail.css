@@ -1,0 +1,677 @@
+/* 设备详情页 */
+.device-detail-page {
+  padding: 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.error-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.error-message h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 返回按钮 */
+.back-button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.87);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.2s;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.back-button:hover {
+  background: rgba(100, 108, 255, 0.1);
+  border-color: rgba(100, 108, 255, 0.3);
+  color: #646cff;
+}
+
+.back-button span {
+  margin-left: 0.25rem;
+}
+
+/* 设备信息卡片 */
+.device-info-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.device-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.device-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
+
+.meta-value {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 0.875rem;
+}
+
+.price-value {
+  color: #646cff;
+  font-weight: 500;
+}
+
+.category-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.category-tag {
+  background: rgba(100, 108, 255, 0.1);
+  color: #646cff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.device-summary {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 采购操作区域 */
+.procurement-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.added-message {
+  background: rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.4);
+  color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quantity-selector {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.quantity-selector label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
+
+.quantity-input {
+  width: 80px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.quantity-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.btn-confirm,
+.btn-cancel,
+.btn-add-procurement,
+.btn-view-list {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn-confirm {
+  background: #646cff;
+  border-color: #646cff;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background: #747bff;
+  border-color: #747bff;
+}
+
+.btn-cancel {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-cancel:hover {
+  background: rgba(255, 82, 82, 0.1);
+  border-color: rgba(255, 82, 82, 0.3);
+  color: #ff5252;
+}
+
+.btn-add-procurement {
+  background: rgba(100, 108, 255, 0.1);
+  border-color: rgba(100, 108, 255, 0.3);
+  color: #646cff;
+}
+
+.btn-add-procurement:hover {
+  background: rgba(100, 108, 255, 0.2);
+  border-color: rgba(100, 108, 255, 0.4);
+}
+
+.btn-view-list {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-view-list:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* 主体内容区域 */
+.detail-content {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* 目录侧边栏 */
+.toc-sidebar {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.toc-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 1rem 0;
+}
+
+.toc-nav {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list li {
+  margin-bottom: 0.25rem;
+}
+
+.toc-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  border-left: 2px solid transparent;
+}
+
+.toc-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.toc-link.active {
+  background: rgba(100, 108, 255, 0.1);
+  color: #646cff;
+  border-left-color: #646cff;
+}
+
+/* Markdown 内容区域 */
+.markdown-content {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Markdown 元素样式 */
+.markdown-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.markdown-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.75rem 0;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.markdown-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem 0;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.markdown-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem 0;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.markdown-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.75;
+  margin: 0 0 1rem 0;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.75;
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content a {
+  color: #646cff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.markdown-content a:hover {
+  color: #747bff;
+  text-decoration: underline;
+}
+
+.markdown-content code {
+  background: rgba(100, 108, 255, 0.1);
+  color: #646cff;
+  padding: 0.125rem 0.375rem;
+  border-radius: 3px;
+  font-size: 0.875em;
+}
+
+.markdown-content pre {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.markdown-content pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #646cff;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.markdown-content hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
+
+.markdown-content .table-wrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.markdown-content th,
+.markdown-content td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.markdown-content th {
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.markdown-content td {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.markdown-content tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .detail-content {
+    grid-template-columns: 1fr;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+
+  .device-info-card {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .device-name {
+    font-size: 1.5rem;
+  }
+
+  .device-meta {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .device-info-card {
+    padding: 1rem;
+  }
+
+  .device-name {
+    font-size: 1.25rem;
+  }
+
+  .device-meta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .meta-item {
+    flex-wrap: wrap;
+  }
+
+  .markdown-content {
+    padding: 1.25rem;
+  }
+
+  .markdown-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .markdown-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .markdown-content h3 {
+    font-size: 1.125rem;
+  }
+}
+
+/* 小屏幕适配 */
+@media (max-width: 375px) {
+  .device-info-card {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .device-name {
+    font-size: 1.125rem;
+  }
+
+  .device-meta {
+    gap: 0.5rem;
+  }
+
+  .category-tag {
+    font-size: 0.625rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .device-summary {
+    font-size: 0.875rem;
+  }
+
+  .back-button {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8125rem;
+    margin-bottom: 1rem;
+  }
+
+  .markdown-content {
+    padding: 1rem;
+  }
+
+  .markdown-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .markdown-content h2 {
+    font-size: 1.125rem;
+  }
+
+  .markdown-content h3 {
+    font-size: 1rem;
+  }
+
+  .markdown-content p {
+    font-size: 0.875rem;
+  }
+
+  .markdown-content table {
+    font-size: 0.75rem;
+  }
+
+  .markdown-content th,
+  .markdown-content td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* 浅色主题适配 */
+@media (prefers-color-scheme: light) {
+  .device-detail-page {
+    color: #213547;
+  }
+
+  .loading,
+  .error-message {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .back-button {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #213547;
+  }
+
+  .back-button:hover {
+    background: rgba(100, 108, 255, 0.05);
+    border-color: rgba(100, 108, 255, 0.2);
+    color: #646cff;
+  }
+
+  .device-info-card {
+    background: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .device-name {
+    color: #213547;
+  }
+
+  .meta-label {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .meta-value {
+    color: #213547;
+  }
+
+  .device-summary {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .category-tag {
+    background: rgba(100, 108, 255, 0.05);
+  }
+
+  .toc-title {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .toc-nav {
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  .toc-link {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .toc-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #213547;
+  }
+
+  .toc-link.active {
+    background: rgba(100, 108, 255, 0.05);
+    color: #646cff;
+  }
+
+  .markdown-content {
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  .markdown-content h1,
+  .markdown-content h2,
+  .markdown-content h3,
+  .markdown-content h4 {
+    color: #213547;
+  }
+
+  .markdown-content h1 {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .markdown-content p,
+  .markdown-content ul,
+  .markdown-content ol {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .markdown-content blockquote {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .markdown-content hr {
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .markdown-content pre {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .markdown-content th {
+    background: rgba(0, 0, 0, 0.03);
+    color: #213547;
+  }
+
+  .markdown-content td {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .markdown-content td,
+  .markdown-content th {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .markdown-content tr:hover td {
+    background: rgba(0, 0, 0, 0.01);
+  }
+}

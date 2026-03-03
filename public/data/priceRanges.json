@@ -1,0 +1,38 @@
+{
+  "priceRanges": [
+    {
+      "id": "budget",
+      "name": "经济型",
+      "description": "价格较低的基础款设备",
+      "min": 0,
+      "max": 100000,
+      "label": "10万以下"
+    },
+    {
+      "id": "mid-range",
+      "name": "中端",
+      "description": "价格适中的标准款设备",
+      "min": 100000,
+      "max": 500000,
+      "label": "10-50万"
+    },
+    {
+      "id": "high-end",
+      "name": "高端",
+      "description": "价格较高的专业设备",
+      "min": 500000,
+      "max": 1000000,
+      "label": "50-100万"
+    },
+    {
+      "id": "premium",
+      "name": "顶配",
+      "description": "价格昂贵的顶级设备",
+      "min": 1000000,
+      "max": null,
+      "label": "100万以上"
+    }
+  ],
+  "currency": "CNY",
+  "unit": "元"
+}
