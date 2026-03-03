@@ -4,12 +4,14 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import TermTooltip from '../components/TermTooltip'
 import { useProcurement } from '../context/ProcurementContext'
+import { useFavorites } from '../context/FavoritesContext'
 import './DeviceDetail.css'
 
 export default function DeviceDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
   const { addItem } = useProcurement()
+  const { isFavorite, toggleFavorite } = useFavorites()
   const [device, setDevice] = useState(null)
   const [markdownContent, setMarkdownContent] = useState('')
   const [glossaryData, setGlossaryData] = useState(null)
@@ -19,6 +21,7 @@ export default function DeviceDetail() {
   const [quantity, setQuantity] = useState(1)
   const [showQuantityInput, setShowQuantityInput] = useState(false)
   const [addedMessage, setAddedMessage] = useState(false)
+  const [favoriteMessage, setFavoriteMessage] = useState('')
 
   useEffect(() => {
     const loadDeviceData = async () => {
@@ -187,6 +190,14 @@ export default function DeviceDetail() {
     }
   }
 
+  const handleToggleFavorite = () => {
+    if (device) {
+      toggleFavorite(device.id)
+      setFavoriteMessage(isFavorite(device.id) ? '已取消收藏' : '已添加到收藏')
+      setTimeout(() => setFavoriteMessage(''), 2000)
+    }
+  }
+
   const handleQuantityChange = (value) => {
     const num = parseInt(value)
     if (num >= 1 && num <= 100) {
@@ -243,6 +254,11 @@ export default function DeviceDetail() {
 
         {/* 添加到采购清单 */}
         <div className="procurement-actions">
+          {favoriteMessage && (
+            <div className="favorite-message">
+              {favoriteMessage}
+            </div>
+          )}
           {addedMessage ? (
             <div className="added-message">
               已添加到采购清单
@@ -267,12 +283,20 @@ export default function DeviceDetail() {
               </button>
             </div>
           ) : (
-            <button className="btn-add-procurement" onClick={() => setShowQuantityInput(true)}>
-              添加到采购清单
-            </button>
+            <>
+              <button className="btn-favorite" onClick={handleToggleFavorite}>
+                {device && isFavorite(device.id) ? '❤️ 已收藏' : '🤍 收藏'}
+              </button>
+              <button className="btn-add-procurement" onClick={() => setShowQuantityInput(true)}>
+                添加到采购清单
+              </button>
+            </>
           )}
           <Link to="/procurement" className="btn-view-list">
             查看采购清单
+          </Link>
+          <Link to="/favorites" className="btn-view-favorites">
+            查看收藏
           </Link>
         </div>
       </div>

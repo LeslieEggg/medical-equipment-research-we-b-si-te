@@ -184,14 +184,34 @@
 .btn-confirm,
 .btn-cancel,
 .btn-add-procurement,
-.btn-view-list {
+.btn-view-list,
+.btn-favorite,
+.btn-view-favorites {
   padding: 0.5rem 1rem;
   border-radius: 6px;
   font-size: 0.875rem;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
   border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  white-space: nowrap;
+}
+
+.btn-favorite {
+  background: rgba(255, 152, 0, 0.1);
+  border-color: rgba(255, 152, 0, 0.3);
+  color: #ff9800;
+  font-weight: 500;
+}
+
+.btn-favorite:hover {
+  background: rgba(255, 152, 0, 0.2);
+  border-color: #ff9800;
+  transform: translateY(-1px);
 }
 
 .btn-confirm {
@@ -234,10 +254,29 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.btn-view-list:hover {
+.btn-view-list:hover,
+.btn-view-favorites:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.87);
+  transform: translateY(-1px);
+}
+
+.btn-view-favorites {
+  background: rgba(255, 152, 0, 0.05);
+  border-color: rgba(255, 152, 0, 0.2);
+  color: rgba(255, 152, 0, 0.8);
+}
+
+.favorite-message {
+  background: rgba(255, 152, 0, 0.2);
+  border: 1px solid rgba(255, 152, 0, 0.4);
+  color: #ff9800;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  animation: fadeIn 0.3s ease;
+  font-weight: 500;
 }
 
 /* 主体内容区域 */
