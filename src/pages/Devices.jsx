@@ -1,17 +1,21 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useNavigate, useSearchParams, Link } from 'react-router-dom'
 import { useCompare } from '../context/CompareContext'
+import { useFavorites } from '../context/FavoritesContext'
 import './Devices.css'
 
 export default function Devices() {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
   const { compareDevices, addToCompare, removeFromCompare, isInCompare } = useCompare()
+  const { favorites, isFavorite, toggleFavorite } = useFavorites()
   const [devices, setDevices] = useState([])
   const [loading, setLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
   const [selectedPriceRange, setSelectedPriceRange] = useState('')
+  const [selectedBrand, setSelectedBrand] = useState('')
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
 
   const itemsPerPage = 12
@@ -36,6 +40,18 @@ export default function Devices() {
     { id: '50-100', name: '50-100万', min: 50, max: 100 },
     { id: '100+', name: '100万以上', min: 100, max: null }
   ]
+
+  // 提取所有品牌
+  const brands = useMemo(() => {
+    const brandSet = new Set()
+    devices.forEach(device => {
+      if (device.brand) {
+        brandSet.add(device.brand)
+      }
+    })
+    const brandList = Array.from(brandSet).sort()
+    return [{ id: '', name: '全部品牌' }, ...brandList.map(brand => ({ id: brand, name: brand }))]
+  }, [devices])
 
   useEffect(() => {
     const loadDevices = async () => {
@@ -82,9 +98,12 @@ export default function Devices() {
                (device.priceMax && device.priceMin <= range.max)
       })()
 
-      return matchesSearch && matchesCategory && matchesPrice
+      const matchesBrand = !selectedBrand || device.brand === selectedBrand
+      const matchesFavorites = !showFavoritesOnly || isFavorite(device.id)
+
+      return matchesSearch && matchesCategory && matchesPrice && matchesBrand && matchesFavorites
     })
-  }, [devices, searchQuery, selectedCategory, selectedPriceRange, priceRanges])
+  }, [devices, searchQuery, selectedCategory, selectedPriceRange, selectedBrand, showFavoritesOnly, favorites, priceRanges])
 
   const totalPages = Math.ceil(filteredDevices.length / itemsPerPage)
   const startIndex = (currentPage - 1) * itemsPerPage
@@ -107,6 +126,11 @@ export default function Devices() {
     setSelectedPriceRange(rangeId)
     setCurrentPage(1)
     updateSearchParams(searchQuery, selectedCategory, rangeId)
+  }
+
+  const handleBrandChange = (brandId) => {
+    setSelectedBrand(brandId)
+    setCurrentPage(1)
   }
 
   const updateSearchParams = (search, category, priceRange) => {
@@ -220,6 +244,25 @@ export default function Devices() {
             ))}
           </select>
         </div>
+
+        <div className="category-filter">
+          <select
+            className="category-select"
+            value={selectedBrand}
+            onChange={(e) => handleBrandChange(e.target.value)}
+          >
+            {brands.map(brand => (
+              <option key={brand.id} value={brand.id}>{brand.name}</option>
+            ))}
+          </select>
+        </div>
+
+        <button
+          className={`favorites-filter-button ${showFavoritesOnly ? 'active' : ''}`}
+          onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+        >
+          {showFavoritesOnly ? '❤️ 仅收藏' : '🤍 全部'}
+        </button>
       </div>
 
       {currentDevices.length === 0 ? (
@@ -231,6 +274,8 @@ export default function Devices() {
               handleSearchChange('')
               handleCategoryChange('')
               handlePriceRangeChange('')
+              handleBrandChange('')
+              setShowFavoritesOnly(false)
             }}
           >
             清除筛选条件
