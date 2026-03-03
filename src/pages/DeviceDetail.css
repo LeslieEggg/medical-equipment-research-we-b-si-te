@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   min-height: 200px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-secondary);
 }
 
 .error-message {
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   min-height: 200px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-secondary);
 }
 
 .error-message h2 {
@@ -27,9 +27,9 @@
 
 /* 返回按钮 */
 .back-button {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-bg-light);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-text);
   padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
@@ -37,15 +37,16 @@
   align-items: center;
   font-size: 0.875rem;
   margin-bottom: 1.5rem;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
   min-height: 44px;
   min-width: 44px;
 }
 
 .back-button:hover {
   background: rgba(100, 108, 255, 0.1);
-  border-color: rgba(100, 108, 255, 0.3);
-  color: #646cff;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateX(-4px);
 }
 
 .back-button span {
@@ -54,18 +55,19 @@
 
 /* 设备信息卡片 */
 .device-info-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-bg-light);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   padding: 1.5rem 2rem;
   margin-bottom: 2rem;
+  box-shadow: var(--shadow);
 }
 
 .device-name {
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 1rem 0;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-text);
 }
 
 .device-meta {
@@ -82,18 +84,18 @@
 }
 
 .meta-label {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-secondary);
   font-size: 0.875rem;
 }
 
 .meta-value {
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-text);
   font-size: 0.875rem;
 }
 
 .price-value {
-  color: #646cff;
-  font-weight: 500;
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .category-tags {
@@ -104,14 +106,20 @@
 
 .category-tag {
   background: rgba(100, 108, 255, 0.1);
-  color: #646cff;
+  color: var(--color-primary);
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
   font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.category-tag:hover {
+  background: rgba(100, 108, 255, 0.15);
+  transform: translateY(-1px);
 }
 
 .device-summary {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text-secondary);
   margin: 0;
   line-height: 1.6;
 }
@@ -243,15 +251,16 @@
 /* 目录侧边栏 */
 .toc-sidebar {
   position: sticky;
-  top: 2rem;
-  max-height: calc(100vh - 4rem);
+  top: 5rem; /* 调整top值，避免被header遮挡 */
+  max-height: calc(100vh - 6rem);
   overflow-y: auto;
+  z-index: 10; /* 确保在内容区域之上 */
 }
 
 .toc-title {
   font-size: 0.875rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  color: var(--color-text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 0 0 1rem 0;
@@ -275,73 +284,76 @@
 
 .toc-link {
   display: block;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-secondary);
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   font-size: 0.875rem;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
   border-left: 2px solid transparent;
 }
 
 .toc-link:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.87);
+  background: var(--color-bg-light);
+  color: var(--color-text);
+  transform: translateX(2px);
 }
 
 .toc-link.active {
   background: rgba(100, 108, 255, 0.1);
-  color: #646cff;
-  border-left-color: #646cff;
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
+  font-weight: 500;
 }
 
 /* Markdown 内容区域 */
 .markdown-content {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 12px;
+  background: var(--color-bg-lighter);
+  border-radius: var(--border-radius);
   padding: 2rem;
+  box-shadow: var(--shadow);
 }
 
 /* Markdown 元素样式 */
 .markdown-content h1 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 2rem 0 1rem 0;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.87);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-text);
 }
 
 .markdown-content h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 1.75rem 0 0.75rem 0;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-text);
 }
 
 .markdown-content h3 {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 1.5rem 0 0.5rem 0;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-text);
 }
 
 .markdown-content h4 {
   font-size: 1rem;
   font-weight: 600;
   margin: 1.25rem 0 0.5rem 0;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--color-text);
 }
 
 .markdown-content p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(224, 224, 224, 0.9); /* 提高对比度 */
   line-height: 1.75;
   margin: 0 0 1rem 0;
 }
 
 .markdown-content ul,
 .markdown-content ol {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(224, 224, 224, 0.9);
   line-height: 1.75;
   margin: 0 0 1rem 0;
   padding-left: 1.5rem;
