@@ -39,6 +39,7 @@ export default function Header() {
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
           <Link to="/" className="nav-link" onClick={closeMenu}>首页</Link>
           <Link to="/devices" className="nav-link" onClick={closeMenu}>设备列表</Link>
+          <Link to="/favorites" className="nav-link" onClick={closeMenu}>我的收藏</Link>
           <Link to="/glossary" className="nav-link" onClick={closeMenu}>术语表</Link>
           <Link to="/procurement" className="nav-link cart-link" onClick={closeMenu}>
             <span className="cart-icon">🛒</span>
