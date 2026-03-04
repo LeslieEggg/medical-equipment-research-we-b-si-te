@@ -1,314 +1,144 @@
-/* 设备详情页 */
+/* 设备详情页 - GitHub 风格 */
+
 .device-detail-page {
-  padding: 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.loading {
+/* 顶部导航面包屑 */
+.breadcrumb {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 200px;
-  color: var(--color-text-secondary);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
 }
 
-.error-message {
+.breadcrumb-link {
+  color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: var(--color-fg-muted);
+}
+
+.breadcrumb-current {
+  color: var(--color-fg-muted);
+}
+
+/* 设备头部信息 */
+.device-header {
+  background: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.device-header-top {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
-  color: var(--color-text-secondary);
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
-.error-message h2 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+.device-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--color-fg-default);
 }
 
-/* 返回按钮 */
-.back-button {
-  background: var(--color-bg-light);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--color-text);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
+.device-category-badge {
   display: inline-flex;
   align-items: center;
-  font-size: 0.875rem;
-  margin-bottom: 1.5rem;
-  transition: all 0.2s ease;
-  min-height: 44px;
-  min-width: 44px;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  color: var(--color-fg-muted);
 }
 
-.back-button:hover {
-  background: rgba(100, 108, 255, 0.1);
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  transform: translateX(-4px);
+.device-category-badge span {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent-fg);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-weight: 500;
 }
 
-.back-button span {
-  margin-left: 0.25rem;
-}
-
-/* 设备信息卡片 */
-.device-info-card {
-  background: var(--color-bg-light);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--border-radius);
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow);
-}
-
-.device-name {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  color: var(--color-text);
+.device-actions {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .device-meta {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-muted);
 }
 
 .meta-item {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .meta-label {
-  color: var(--color-text-secondary);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  color: var(--color-fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .meta-value {
-  color: var(--color-text);
   font-size: 0.875rem;
-}
-
-.price-value {
-  color: var(--color-primary);
-  font-weight: 600;
-}
-
-.category-tags {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.category-tag {
-  background: rgba(100, 108, 255, 0.1);
-  color: var(--color-primary);
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  transition: all 0.2s ease;
-}
-
-.category-tag:hover {
-  background: rgba(100, 108, 255, 0.15);
-  transform: translateY(-1px);
-}
-
-.device-summary {
-  color: var(--color-text-secondary);
-  margin: 0;
-  line-height: 1.6;
-}
-
-/* 采购操作区域 */
-.procurement-actions {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.added-message {
-  background: rgba(76, 175, 80, 0.2);
-  border: 1px solid rgba(76, 175, 80, 0.4);
-  color: #4caf50;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.quantity-selector {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.quantity-selector label {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.875rem;
-}
-
-.quantity-input {
-  width: 80px;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.87);
-  border-radius: 4px;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
-  text-align: center;
-}
-
-.quantity-input:focus {
-  outline: none;
-  border-color: #646cff;
-}
-
-.btn-confirm,
-.btn-cancel,
-.btn-add-procurement,
-.btn-view-list,
-.btn-favorite,
-.btn-view-favorites {
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-height: 44px;
-  white-space: nowrap;
-}
-
-.btn-favorite {
-  background: rgba(255, 152, 0, 0.1);
-  border-color: rgba(255, 152, 0, 0.3);
-  color: #ff9800;
+  color: var(--color-fg-default);
   font-weight: 500;
 }
 
-.btn-favorite:hover {
-  background: rgba(255, 152, 0, 0.2);
-  border-color: #ff9800;
-  transform: translateY(-1px);
+.meta-value.price {
+  color: var(--color-success-fg);
+  font-size: 1rem;
 }
 
-.btn-confirm {
-  background: #646cff;
-  border-color: #646cff;
-  color: white;
-}
-
-.btn-confirm:hover {
-  background: #747bff;
-  border-color: #747bff;
-}
-
-.btn-cancel {
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.btn-cancel:hover {
-  background: rgba(255, 82, 82, 0.1);
-  border-color: rgba(255, 82, 82, 0.3);
-  color: #ff5252;
-}
-
-.btn-add-procurement {
-  background: rgba(100, 108, 255, 0.1);
-  border-color: rgba(100, 108, 255, 0.3);
-  color: #646cff;
-}
-
-.btn-add-procurement:hover {
-  background: rgba(100, 108, 255, 0.2);
-  border-color: rgba(100, 108, 255, 0.4);
-}
-
-.btn-view-list {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.btn-view-list:hover,
-.btn-view-favorites:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.87);
-  transform: translateY(-1px);
-}
-
-.btn-view-favorites {
-  background: rgba(255, 152, 0, 0.05);
-  border-color: rgba(255, 152, 0, 0.2);
-  color: rgba(255, 152, 0, 0.8);
-}
-
-.favorite-message {
-  background: rgba(255, 152, 0, 0.2);
-  border: 1px solid rgba(255, 152, 0, 0.4);
-  color: #ff9800;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  animation: fadeIn 0.3s ease;
-  font-weight: 500;
-}
-
-/* 主体内容区域 */
-.detail-content {
+/* 内容区域 */
+.content-layout {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 2rem;
-  align-items: start;
+  grid-template-columns: 1fr 300px;
+  gap: 1.5rem;
 }
 
-/* 目录侧边栏 */
+/* 主要内容 */
+.main-content {
+  background: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+/* 目录侧栏 */
 .toc-sidebar {
   position: sticky;
-  top: 5rem; /* 调整top值，避免被header遮挡 */
+  top: 5rem;
+  background: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  height: fit-content;
   max-height: calc(100vh - 6rem);
-  overflow-y: auto;
-  z-index: 10; /* 确保在内容区域之上 */
 }
 
 .toc-title {
   font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--color-text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin: 0 0 1rem 0;
-}
-
-.toc-nav {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
-  padding: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-fg-default);
 }
 
 .toc-list {
@@ -317,430 +147,185 @@
   margin: 0;
 }
 
-.toc-list li {
+.toc-item {
   margin-bottom: 0.25rem;
 }
 
 .toc-link {
-  display: block;
-  color: var(--color-text-secondary);
+  font-size: 0.8125rem;
+  color: var(--color-fg-muted);
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  font-size: 0.875rem;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
   transition: all 0.2s ease;
-  border-left: 2px solid transparent;
 }
 
 .toc-link:hover {
-  background: var(--color-bg-light);
-  color: var(--color-text);
-  transform: translateX(2px);
-}
-
-.toc-link.active {
-  background: rgba(100, 108, 255, 0.1);
-  color: var(--color-primary);
-  border-left-color: var(--color-primary);
-  font-weight: 500;
-}
-
-/* Markdown 内容区域 */
-.markdown-content {
-  background: var(--color-bg-lighter);
-  border-radius: var(--border-radius);
-  padding: 2rem;
-  box-shadow: var(--shadow);
-}
-
-/* Markdown 元素样式 */
-.markdown-content h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 2rem 0 1rem 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  color: var(--color-text);
-}
-
-.markdown-content h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 1.75rem 0 0.75rem 0;
-  color: var(--color-text);
-}
-
-.markdown-content h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 1.5rem 0 0.5rem 0;
-  color: var(--color-text);
-}
-
-.markdown-content h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 1.25rem 0 0.5rem 0;
-  color: var(--color-text);
-}
-
-.markdown-content p {
-  color: rgba(224, 224, 224, 0.9); /* 提高对比度 */
-  line-height: 1.75;
-  margin: 0 0 1rem 0;
-}
-
-.markdown-content ul,
-.markdown-content ol {
-  color: rgba(224, 224, 224, 0.9);
-  line-height: 1.75;
-  margin: 0 0 1rem 0;
-  padding-left: 1.5rem;
-}
-
-.markdown-content ul {
-  list-style-type: disc;
-}
-
-.markdown-content li {
-  margin-bottom: 0.5rem;
-}
-
-.markdown-content a {
-  color: #646cff;
+  color: var(--color-accent-fg);
+  background-color: var(--color-accent-subtle);
   text-decoration: none;
-  transition: color 0.2s;
 }
 
-.markdown-content a:hover {
-  color: #747bff;
-  text-decoration: underline;
-}
-
-.markdown-content code {
-  background: rgba(100, 108, 255, 0.1);
-  color: #646cff;
-  padding: 0.125rem 0.375rem;
-  border-radius: 3px;
-  font-size: 0.875em;
-}
-
-.markdown-content pre {
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1rem;
-  overflow-x: auto;
-  margin: 1rem 0;
-}
-
-.markdown-content pre code {
-  background: transparent;
-  padding: 0;
-  border-radius: 0;
-}
-
-.markdown-content blockquote {
-  border-left: 4px solid #646cff;
-  padding-left: 1rem;
-  margin: 1rem 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-style: italic;
-}
-
-.markdown-content hr {
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 2rem 0;
-}
-
-.markdown-content .table-wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-}
-
-.markdown-content table {
-  width: 100%;
-  border-collapse: collapse;
+/* Markdown 内容样式 */
+.markdown-body {
   font-size: 0.875rem;
-  min-width: 600px;
+  line-height: 1.6;
+  color: var(--color-fg-default);
 }
 
-.markdown-content th,
-.markdown-content td {
-  padding: 0.875rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--color-fg-default);
 }
 
-.markdown-content th {
-  background: rgba(100, 108, 255, 0.1);
-  font-weight: 700;
-  color: var(--color-text);
-  position: sticky;
-  top: 0;
-  z-index: 5;
+.markdown-body h1 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border-muted);
 }
 
-.markdown-content td {
-  color: rgba(224, 224, 224, 0.9);
+.markdown-body h2 {
+  font-size: 1.25rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--color-border-muted);
 }
 
-.markdown-content tr:hover td {
-  background: rgba(100, 108, 255, 0.05);
+.markdown-body h3 {
+  font-size: 1.125rem;
 }
 
-.markdown-content strong {
-  color: var(--color-primary);
+.markdown-body h4 {
+  font-size: 1rem;
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
+
+.markdown-body strong {
+  color: var(--color-accent-fg);
   font-weight: 600;
 }
 
-.markdown-content em {
-  color: var(--color-secondary);
+.markdown-body em {
+  color: var(--color-success-fg);
   font-style: normal;
   font-weight: 500;
 }
 
-/* 响应式设计 */
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border-default);
+}
+
+.markdown-body thead {
+  background-color: var(--color-canvas-inset);
+}
+
+.markdown-body th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border-default);
+  font-size: 0.8125rem;
+}
+
+.markdown-body td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border-muted);
+  font-size: 0.8125rem;
+}
+
+.markdown-body tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown-body tbody tr:hover {
+  background-color: var(--color-canvas-inset);
+}
+
+/* 错误状态 */
+.error-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--color-fg-muted);
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.error-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-fg-default);
+}
+
+.error-message {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* 响应式 */
 @media (max-width: 1024px) {
-  .detail-content {
+  .content-layout {
     grid-template-columns: 1fr;
   }
-
+  
   .toc-sidebar {
-    display: none;
-  }
-
-  .device-info-card {
-    padding: 1.25rem 1.5rem;
-  }
-
-  .device-name {
-    font-size: 1.5rem;
-  }
-
-  .device-meta {
-    gap: 1.5rem;
+    position: static;
+    max-height: none;
+    order: -1;
   }
 }
 
-@media (max-width: 640px) {
-  .device-info-card {
+@media (max-width: 768px) {
+  .device-header {
     padding: 1rem;
   }
-
-  .device-name {
-    font-size: 1.25rem;
-  }
-
-  .device-meta {
+  
+  .device-header-top {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
   }
-
-  .meta-item {
-    flex-wrap: wrap;
+  
+  .device-actions {
+    width: 100%;
   }
-
-  .markdown-content {
-    padding: 1.25rem;
+  
+  .device-actions .btn {
+    flex: 1;
   }
-
-  .markdown-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .markdown-content h2 {
-    font-size: 1.25rem;
-  }
-
-  .markdown-content h3 {
-    font-size: 1.125rem;
-  }
-}
-
-/* 小屏幕适配 */
-@media (max-width: 375px) {
-  .device-info-card {
-    padding: 0.75rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .device-name {
-    font-size: 1.125rem;
-  }
-
+  
   .device-meta {
-    gap: 0.5rem;
+    grid-template-columns: 1fr;
   }
-
-  .category-tag {
-    font-size: 0.625rem;
-    padding: 0.2rem 0.5rem;
-  }
-
-  .device-summary {
-    font-size: 0.875rem;
-  }
-
-  .back-button {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.8125rem;
-    margin-bottom: 1rem;
-  }
-
-  .markdown-content {
+  
+  .main-content {
     padding: 1rem;
-  }
-
-  .markdown-content h1 {
-    font-size: 1.25rem;
-  }
-
-  .markdown-content h2 {
-    font-size: 1.125rem;
-  }
-
-  .markdown-content h3 {
-    font-size: 1rem;
-  }
-
-  .markdown-content p {
-    font-size: 0.875rem;
-  }
-
-  .markdown-content table {
-    font-size: 0.75rem;
-  }
-
-  .markdown-content th,
-  .markdown-content td {
-    padding: 0.5rem 0.75rem;
-  }
-}
-
-/* 浅色主题适配 */
-@media (prefers-color-scheme: light) {
-  .device-detail-page {
-    color: #213547;
-  }
-
-  .loading,
-  .error-message {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .back-button {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.1);
-    color: #213547;
-  }
-
-  .back-button:hover {
-    background: rgba(100, 108, 255, 0.05);
-    border-color: rgba(100, 108, 255, 0.2);
-    color: #646cff;
-  }
-
-  .device-info-card {
-    background: rgba(0, 0, 0, 0.02);
-    border-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .device-name {
-    color: #213547;
-  }
-
-  .meta-label {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .meta-value {
-    color: #213547;
-  }
-
-  .device-summary {
-    color: rgba(0, 0, 0, 0.7);
-  }
-
-  .category-tag {
-    background: rgba(100, 108, 255, 0.05);
-  }
-
-  .toc-title {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .toc-nav {
-    background: rgba(0, 0, 0, 0.02);
-  }
-
-  .toc-link {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .toc-link:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: #213547;
-  }
-
-  .toc-link.active {
-    background: rgba(100, 108, 255, 0.05);
-    color: #646cff;
-  }
-
-  .markdown-content {
-    background: rgba(0, 0, 0, 0.02);
-  }
-
-  .markdown-content h1,
-  .markdown-content h2,
-  .markdown-content h3,
-  .markdown-content h4 {
-    color: #213547;
-  }
-
-  .markdown-content h1 {
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .markdown-content p,
-  .markdown-content ul,
-  .markdown-content ol {
-    color: rgba(0, 0, 0, 0.8);
-  }
-
-  .markdown-content blockquote {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .markdown-content hr {
-    border-top-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .markdown-content pre {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .markdown-content th {
-    background: rgba(0, 0, 0, 0.03);
-    color: #213547;
-  }
-
-  .markdown-content td {
-    color: rgba(0, 0, 0, 0.8);
-  }
-
-  .markdown-content td,
-  .markdown-content th {
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .markdown-content tr:hover td {
-    background: rgba(0, 0, 0, 0.01);
   }
 }
