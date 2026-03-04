@@ -56,7 +56,8 @@ export default function Devices() {
   useEffect(() => {
     const loadDevices = async () => {
       try {
-        const response = await fetch('/data/devices.json')
+        const basePath = import.meta.env.BASE_URL || '/'
+        const response = await fetch(`${basePath}data/devices.json`)
         const data = await response.json()
         setDevices(data)
       } catch (error) {

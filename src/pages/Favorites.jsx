@@ -11,7 +11,7 @@ export default function Favorites() {
   useEffect(() => {
     const loadDevices = async () => {
       try {
-        const response = await fetch('/data/devices.json')
+        const response = await fetch(`${import.meta.env.BASE_URL}data/devices.json`)
         if (!response.ok) {
           throw new Error('加载设备数据失败')
         }

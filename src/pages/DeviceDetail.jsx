@@ -29,14 +29,14 @@ export default function DeviceDetail() {
         setLoading(true)
 
         // 加载术语数据
-        const glossaryResponse = await fetch('/data/glossary.json')
+        const glossaryResponse = await fetch(`${import.meta.env.BASE_URL}data/glossary.json`)
         if (glossaryResponse.ok) {
           const glossary = await glossaryResponse.json()
           setGlossaryData(glossary)
         }
 
         // 加载设备列表
-        const devicesResponse = await fetch('/data/devices.json')
+        const devicesResponse = await fetch(`${import.meta.env.BASE_URL}data/devices.json`)
         if (!devicesResponse.ok) {
           throw new Error('加载设备数据失败')
         }

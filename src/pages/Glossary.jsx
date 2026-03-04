@@ -12,7 +12,7 @@ export default function Glossary() {
   useEffect(() => {
     const loadGlossaryData = async () => {
       try {
-        const response = await fetch('/data/glossary.json')
+        const response = await fetch(`${import.meta.env.BASE_URL}data/glossary.json`)
         if (!response.ok) {
           throw new Error('加载术语数据失败')
         }

@@ -16,7 +16,7 @@ export default function Compare() {
   useEffect(() => {
     const loadDevices = async () => {
       try {
-        const response = await fetch('/data/devices.json')
+        const response = await fetch(`${import.meta.env.BASE_URL}data/devices.json`)
         const data = await response.json()
         setDevices(data)
       } catch (error) {
