@@ -21,7 +21,7 @@ function App() {
     <ProcurementProvider>
       <CompareProvider>
         <FavoritesProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
               <Route path="/" element={<Main />}>
                 <Route index element={<Home />} />
