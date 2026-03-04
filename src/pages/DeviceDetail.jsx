@@ -51,7 +51,7 @@ export default function DeviceDetail() {
         setDevice(foundDevice)
 
         // 加载 Markdown 报告
-        const markdownResponse = await fetch(`/deep-research-reports/${foundDevice.file}`)
+        const markdownResponse = await fetch(`${import.meta.env.BASE_URL}deep-research-reports/${foundDevice.file}`)
         if (!markdownResponse.ok) {
           throw new Error('加载报告失败')
         }
